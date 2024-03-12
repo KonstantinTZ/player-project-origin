@@ -1,0 +1,16 @@
+/* Base */
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+@import "./base/sticky-footer";
+@import "./pages/main";
+
+button {
+  padding: 0;
+  margin: 0;
+}
+
+/* Blocks */
+@import "./blocks/*.scss";
