@@ -3,11 +3,20 @@
   background-image: url("../../img/bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
   background-position: center;
   padding-right: 3.333vw;
   padding-left: 2.917vw;
   display: flex;
   flex-direction: column;
+
+  &__desk {
+    display: flex;
+  }
+
+  &__tablet {
+    display: none ;
+  }
 
   .container {
     max-width: 1920px;
@@ -17,7 +26,6 @@
 
   &__center {
     row-gap: 2.037vh;
-    display: flex;
     flex-direction: column;
   }
 
@@ -53,6 +61,7 @@
               width: 2.344vw;
               object-fit: contain;
             }
+
             span {
               font-family: Arial;
               @include font-size(11px, 25.4px);
@@ -215,7 +224,7 @@
 
     &__st2 {
       .column__top {
-        opacity: 0.3;
+        background-color: rgba(233, 117, 44, 0.3);
       }
 
       .column__search {
@@ -225,7 +234,7 @@
 
     &__st3 {
       .column__top {
-        opacity: 0.3;
+        background-color: rgba(233, 117, 44, 0.3);
       }
 
       .column__search {
@@ -275,7 +284,7 @@
       }
 
       &:hover {
-        opacity: 1;
+        opacity: 1 !important;
       }
     }
 
@@ -294,7 +303,7 @@
       }
 
       &:hover {
-        opacity: 1;
+        opacity: 1 !important;
       }
     }
 
@@ -313,7 +322,7 @@
       }
 
       &:hover {
-        opacity: 1;
+        opacity: 1 !important;
       }
     }
 
@@ -331,7 +340,7 @@
       }
 
       &:hover {
-        opacity: 1;
+        opacity: 1 !important;
       }
     }
 
@@ -393,8 +402,61 @@
 }
 
 .column {
-  .polygon:hover~.column__top {
-    background-color: #252526 !important;
-    opacity: 0.5 !important;
+
+
+  .polygon:hover > .column__shop, .polygon:hover > .column__audio, .polygon:hover > .column__video, .polygon:hover > .column__search {
+    opacity: 0.5;
+  }
+
+}
+
+.polygon:hover + .column__top {
+  background-color: gainsboro;
+}
+
+.drawer {
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
+  z-index: 999;
+  width: 370px;
+  background-color: #7e90a5;
+
+  &__top {
+    width: 100%;
+    height: 90px;
+    background-color: #7e90a5;
+    border-bottom: 3px solid #b8babb;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+
+  &__element {
+
+    height: 94px;
+    background-color: #7e90a5;
+    border-bottom: 3px solid #b8babb;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #4a5d73;
+    }
+
+    span {
+      font-family: 'Arial';
+      font-size: 29px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #ffffff;
+      text-align: center;
+    }
   }
 }

@@ -56,7 +56,7 @@
           gap: 1.597vw !important;
 
           span {
-            font-size: 15px !important;
+            font-size: 16px !important;
           }
 
           &__burger {
@@ -69,7 +69,7 @@
 
         .lk {
           span {
-            font-size: 15px !important;
+            font-size: 16px !important;
           }
           gap: 2.222vw !important;
           img {
@@ -135,11 +135,11 @@
         &__top {
           max-width: 9.306vw;
           width: 9.306vw;
-          height: 14.409vh;
+          height: auto;
           padding-top: 0.748vh;
           padding-bottom: 0.591vh;
           padding-right: 0.833vw;
-          padding-left: 0.486vw;
+          padding-left: 0.786vw;
           justify-content: space-between;
 
           span  {
@@ -148,6 +148,7 @@
             display: flex;
             align-items: center;
             width: 100%;
+            font-size: 12px;
             height: 100%;
 
             br {
@@ -157,7 +158,7 @@
             justify-content: space-between;
 
             .frag {
-              font-size: 83%;
+              @include font-size(15px, 50.3px, 380px, 2540px, true);
               display: block;
               word-break: break-all;
               line-height: 1;

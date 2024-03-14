@@ -1,0 +1,1 @@
+document.querySelectorAll(".polygon").forEach((e=>{e.addEventListener("mouseover",(e=>{}))}));

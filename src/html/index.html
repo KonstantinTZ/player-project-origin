@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Стартовый шаблон</title>
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
-	<body>
-	<main>
-				@@include('main/index.html')
-	</main>
-		<script src="./js/index.bundle.js"></script>
-	</body>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body>
+<main>
+    @@include('main/index.html')
+    <div class="drawer" id="menu">
+        <div class="drawer__top">
+            <button><img src="../img/close.svg" alt="close"></button>
+        </div>
+        <button class="drawer__element">
+            <span>Главная</span>
+        </button>
+        <button class="drawer__element">
+            <span>О компании</span>
+        </button>
+        <button class="drawer__element">
+				<span>Общие<br/> коммерческие условия</span>
+        </button>
+		<button class="drawer__element">
+				<span>Политика конфеденциальности</span>
+        </button>
+		<button class="drawer__element">
+				<span>Контакты</span>
+        </button>
+		<div class="drawer__element">
+        </div>
+		<div class="drawer__element">
+        </div>
+		<div class="drawer__element">
+        </div>
+		<div class="drawer__element">
+        </div>
+    </div>
+</main>
+<script src="./js/index.bundle.js"></script>
+</body>
 </html>

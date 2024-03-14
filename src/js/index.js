@@ -1,2 +1,6 @@
-import mobileNav from './modules/mobile-nav.js';
-mobileNav();
+const polygons = document.querySelectorAll('.polygon')
+
+polygons.forEach(polygon => {
+    polygon.addEventListener('mouseover', (e) => {
+    })
+})
