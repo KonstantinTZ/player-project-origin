@@ -23,14 +23,13 @@
   }
 
   .player {
-    grid-column: span 3 / span 3;
     width: 100% !important;
     height: 100% !important;
-    max-height: 100% !important;
+    max-height: 72vh !important;
     gap: 0.909vh !important;
 
     img {
-      max-height: max-content !important;
+      max-height: 100% !important;
     }
 
     &__top {
@@ -40,6 +39,8 @@
       height: 7.455vh !important;
       margin-right: 0 !important;
       flex-direction: row !important;
+      justify-content: flex-start !important;
+      gap: 1vw;
 
       span {
         font-weight: 700 !important;
@@ -98,7 +99,6 @@
   }
 
   .main {
-    height: auto;
     padding: 0 3.611vw !important;
 
     &__desk {
@@ -106,19 +106,23 @@
     }
 
     &__tablet {
-      display: flex !important;
+      display: grid !important;
+      margin-top: 3.889vh;
+      grid-template-columns: 1fr 1fr;
+      height: 76.2vh;
+      margin-bottom: 7.014vh !important;
     }
 
     &__row {
       margin-top: 3.727vh !important;
-      row-gap: 28.091vh !important;
+      row-gap: 12vh !important;
       flex-wrap: wrap;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      overflow-y: scroll;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
 
       &:last-child {
-        margin-top: 3.273vh !important;
-        margin-bottom: 7vh !important;
+        margin-top: 0 !important;
       }
 
       .column {
@@ -166,7 +170,6 @@
           padding-bottom: 0.591vh;
           padding-right: 0.833vw;
           padding-left: 0.486vw;
-          justify-content: space-between;
 
         }
 
