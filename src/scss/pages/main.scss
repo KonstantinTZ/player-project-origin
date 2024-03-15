@@ -386,8 +386,8 @@
 
       span {
         font-family: Times New Roman;
-        @include font-size(7px, 25px);
-        line-height: 20px;
+        font-size: 2.315vh;
+        line-height: 2vh;
         font-weight: 400;
         color: #ffffff;
       }
