@@ -177,7 +177,7 @@ html, body {
 
 .main {
   height: 100vh;
-  background-image: url("../../img/bg.webp");
+  background-image: url("../img/bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
