@@ -539,6 +539,8 @@ html, body {
   height: 100%;
   width: 100%;
   max-height: 35.648vh;
+  object-fit: cover;
+  object-position: left;
   opacity: 0.5;
   flex: 1;
 }
