@@ -184,4 +184,49 @@
       }
     }
   }
+
+  .drawer {
+    width: 40%;
+
+    &__top {
+      padding-right: 3.346vw;
+      height: 10vh;
+
+      button {
+
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 3vw;
+          height: 3vh;
+        }
+      }
+    }
+
+    &__element {
+      height: 10vh;
+
+      span {
+        @include font-size(12px, 62.8px, 380px, 2540px, true);
+      }
+
+      &:nth-child(6) {
+        border: none;
+      }
+    }
+
+    bottom: auto;
+
+    button.drawer__element {
+      &:last-child {
+        border: none;
+      }
+    }
+
+    > div.drawer__element {
+      display: none;
+    }
+
+  }
 }
