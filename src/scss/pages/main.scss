@@ -374,10 +374,10 @@
     }
 
     &__top {
-      height: 7.222vh;
+      min-height: 7.222vh;
       margin-right: 1.979vw;
-      padding-top: 6px;
-      padding-bottom: 5px;
+      padding-top: 0.556vh;
+      padding-bottom: 0.463vh;
       padding-left: 0.573vw;
       background-color: #908a8a;
       display: flex;
@@ -386,8 +386,8 @@
 
       span {
         font-family: Times New Roman;
-        @include font-size(10px, 25px);
-        line-height: 1.759vh;
+        @include font-size(7px, 25px);
+        line-height: 20px;
         font-weight: 400;
         color: #ffffff;
       }
