@@ -176,12 +176,12 @@
         right: 0;
         background-color: rgba(255, 255, 255, 0.3);
         transition: all 0.2s ease-in-out;
-        bottom: -10px;
+        bottom: 0;
       }
 
       &:hover {
         &:after {
-          opacity: 1;
+          opacity: 0.7;
         }
       }
     }
@@ -284,7 +284,7 @@
 
 
       .column__top {
-        background-color: rgba(233, 117, 44, 0.7);
+        background-color: rgba(233, 117, 44, 0.3);
 
 
 
@@ -297,7 +297,7 @@
 
     &__st3 {
       .column__top {
-        background-color: rgba(233, 117, 44, 0.7);
+        background-color: rgba(233, 117, 44, 0.3);
       }
 
       .column__search {
@@ -307,7 +307,7 @@
 
     &__7, &__8, &__9, &__10, &__11, &__12, &__13, &__14, &__15, &__16, &__17 {
       .column__top {
-        background: rgba(125, 97, 155, 0.7);
+        background: rgba(125, 97, 155, 0.3);
         opacity: 1 !important;
       }
 
@@ -368,6 +368,10 @@
       }
 
       &:hover {
+        opacity: 0.7 !important;
+      }
+
+      &:active {
         opacity: 1 !important;
       }
     }
@@ -387,6 +391,10 @@
       }
 
       &:hover {
+        opacity: 0.7 !important;
+      }
+
+      &:active {
         opacity: 1 !important;
       }
     }
@@ -406,6 +414,10 @@
       }
 
       &:hover {
+        opacity: 0.7 !important;
+      }
+
+      &:active {
         opacity: 1 !important;
       }
     }
@@ -424,6 +436,10 @@
       }
 
       &:hover {
+        opacity: 0.7 !important;
+      }
+
+      &:active {
         opacity: 1 !important;
       }
     }
@@ -564,21 +580,21 @@
 }
 
 @keyframes anim1 {
-  0% {background-color: rgba(233, 117, 44, 0.7);}
+  0% {background-color: rgba(233, 117, 44, 0.3);}
   50% {background-color: rgba(233, 117, 44, 1);}
-  100% {background-color: rgba(233, 117, 44, 0.7);}
+  100% {background-color: rgba(233, 117, 44, 0.3);}
 }
 
 @keyframes anim1-2 {
-  0% {background-color: rgba(233, 117, 44, 0.5);}
+  0% {background-color: rgba(233, 117, 44, 0.3);}
   50% {background-color: rgba(233, 117, 44, 1);}
-  100% {background-color: rgba(233, 117, 44, 0.5);}
+  100% {background-color: rgba(233, 117, 44, 0.3);}
 }
 
 @keyframes anim2 {
-  0% {background-color: rgba(125, 97, 155, 0.7);}
+  0% {background-color: rgba(125, 97, 155, 0.3);}
   50% {background-color: rgba(125, 97, 155, 1);}
-  100% {background-color: rgba(125, 97, 155, 0.7);}
+  100% {background-color: rgba(125, 97, 155, 0.3);}
 }
 
 @keyframes anim2-2 {
