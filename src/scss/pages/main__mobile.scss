@@ -1,7 +1,6 @@
 @media screen and (max-width: 680px) and (orientation: portrait) {
 
   header {
-    position: fixed;
     left: 0;
     right: 0;
     padding: 0 3.611vw !important;
@@ -14,10 +13,9 @@
     row-gap: 0.787vh;
     flex-direction: column;
     z-index: 999;
-    position: fixed;
     left: 0;
     top: 7.377vh;
-    padding: 0 3.611vw !important;
+    padding: 0 !important;
 
     img {
       max-height: 38.937vh;
@@ -48,6 +46,10 @@
   .container {
     width: 100%;
     max-width: 93.819vw !important;
+    grid-template-rows: 1fr 4fr 6fr;
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
   }
 
   nav {
@@ -61,6 +63,10 @@
       li {
         &:nth-child(-n+6) {
           display: none;
+        }
+
+        &:last-child {
+          margin-left: 0 !important;
         }
 
         .menu  {
@@ -99,8 +105,7 @@
     padding: 0 3.611vw !important;
 
     &__center {
-      margin-top: 50.5vh;
-      height: 49.5vh;
+      margin-top: 1.23vh;
       overflow: scroll;
     }
 

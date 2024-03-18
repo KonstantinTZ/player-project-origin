@@ -64,6 +64,10 @@
           display: none;
         }
 
+        &:last-child {
+          margin-left: 0 !important;
+        }
+
         .menu  {
           height: 10.909vh !important;
           width: 12.913vw !important;
