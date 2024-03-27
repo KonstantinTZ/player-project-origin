@@ -3,7 +3,7 @@
   header {
     left: 0;
     right: 0;
-    padding: 0 3.611vw !important;
+    padding: 0 !important;
     top: 0.82vh;
   }
 
@@ -79,6 +79,9 @@
           }
 
           &__burger {
+
+            row-gap: 0.6vh !important;
+
             span {
               height: 0.433vh !important;
               width: 5.972vw !important;
@@ -105,8 +108,15 @@
     padding: 0 3.611vw !important;
 
     &__center {
-      margin-top: 0.7vh;
+      margin-top: 2vh;
       overflow: scroll;
+    }
+
+    .container {
+      width: 100%;
+      padding: 0;
+      height: 100vh;
+      flex: none;
     }
 
     &__row {
@@ -122,12 +132,19 @@
 
       &:last-child {
         margin-bottom: 2vh !important;
+
+        .column {
+          &:last-child {
+            margin-bottom: 2vh;
+          }
+        }
       }
 
       .column {
         width: 100%;
         margin-left: 0 !important;
         flex-direction: row;
+
 
         &__shop {
           width: 13.75vw;
@@ -210,11 +227,11 @@
   }
 
   .drawer {
-    width: 40%;
+    width: 60%;
 
     &__top {
       padding-right: 3.346vw;
-      height: 10vh;
+      height: 9vh;
 
       button {
 
@@ -222,8 +239,8 @@
         align-items: center;
 
         img {
-          width: 3vw;
-          height: 3vh;
+          width: 5vw;
+          height: 5vh;
         }
       }
     }
@@ -232,7 +249,7 @@
       height: 10vh;
 
       span {
-        @include font-size(12px, 62.8px, 380px, 2540px, true);
+        font-size: 2vh;
       }
 
       &:nth-child(6) {

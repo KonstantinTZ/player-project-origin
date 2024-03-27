@@ -1,5 +1,10 @@
 @media screen and (max-width: 1024px) and (orientation: landscape) {
 
+
+  header {
+    padding-top: 4.545vh;
+  }
+
   .container {
     width: 100%;
     max-width: max-content !important;
@@ -18,6 +23,7 @@
 
       span {
         line-height: normal !important;
+        font-size: 13.5px !important;
       }
     }
   }
@@ -33,10 +39,10 @@
     }
 
     &__top {
-
       padding-left: 1.22vw !important;
       padding-right: 0.039vw !important;
       height: 7.455vh !important;
+      min-height: 7.455vh !important;
       margin-right: 0 !important;
       flex-direction: row !important;
       justify-content: flex-start !important;
@@ -79,10 +85,10 @@
 
           &__burger {
 
-            row-gap: 1.364vh !important;
+            row-gap: 1.3vh !important;
 
             span {
-              height: 1vh !important;
+              height: 0.85vh !important;
               width: 3.543vw !important;
             }
           }
@@ -92,7 +98,7 @@
           span {
             font-size: 16px !important;
           }
-          gap: 2.222vw !important;
+          gap: 2vw !important;
           img {
             width: 9.909vh !important;
             height: 9.909vh !important;
@@ -107,6 +113,13 @@
 
     &__desk {
       display: none !important;
+    }
+
+    .container {
+      width: 100%;
+      padding: 0;
+      height: 100vh;
+      flex: none;
     }
 
     &__tablet {

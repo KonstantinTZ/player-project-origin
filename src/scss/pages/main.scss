@@ -1,14 +1,15 @@
 .main {
   height: 100vh;
-  background-image: url("img/bg.webp");
+  width: 100vw;
+  background-image: url("../../img/bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   background-position: center;
-  padding-right: 3.333vw;
-  padding-left: 2.917vw;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
 
   &__desk {
     display: flex;
@@ -19,23 +20,26 @@
   }
 
   .container {
+    width: 1920px;
     max-width: 1920px;
-    padding: 0;
-    margin: 0 auto;
+    overflow: hidden;
+    height: 1080px;
+    margin: 0;
+    flex: 0 0 1920px;
+    padding: 21px 64px 21px 56px;
   }
 
   &__center {
-    row-gap: 2.037vh;
+    row-gap: 27px;
     flex-direction: column;
   }
 
   header {
-    padding-top: 2.037vh;
     display: flex;
     align-items: center;
 
     nav {
-      padding-left: 6.25vw;
+      padding-left: 120px;
       width: 100%;
 
       ul {
@@ -45,33 +49,19 @@
         li {
 
           &:nth-child(2), &:nth-child(6) {
-            margin-left: 5.313vw;
+            margin-left: 102px;
 
-            @media screen and (min-width: 2000px) {
-              margin-left: 102px;
-            }
           }
           &:nth-child(3) {
-            margin-left: 6.146vw;
-
-            @media screen and (min-width: 2000px) {
-              margin-left: 118px;
-            }
+            margin-left: 118px;
           }
           &:nth-child(4), &:nth-child(5) {
-            margin-left: 6.458vw;
+            margin-left: 124px;
 
-            @media screen and (min-width: 2000px) {
-              margin-left: 124px;
-            }
           }
 
           &:nth-child(7) {
-            margin-left: 2.917vw;
-
-            @media screen and (min-width: 2000px) {
-              margin-left: 56px;
-            }
+            margin-left: 56px;
           }
 
           &:last-child {
@@ -79,7 +69,7 @@
           }
 
           font-family: Arial;
-          font-size: 1.323vw;
+          font-size: 25.4px;
           white-space: nowrap;
           line-height: 17px;
           font-weight: 400;
@@ -93,37 +83,34 @@
           .lk {
             display: flex;
             align-items: center;
-            gap: 0.625vw;
+            gap: 13px;
             max-width: 232px;
 
             img {
-              height: 4.167vh;
-              width: 2.344vw;
+              height: 43px;
+              width: 43px;
               object-fit: contain;
             }
 
             span {
-              font-family: Arial;
-              font-size: 1.2vw;
+              font-family: 'Arial';
+              font-size: 21px;
               font-weight: 400;
               color: #ffffff;
 
-              @media screen and (min-width: 2000px) {
-                font-size: 23px;
-              }
             }
           }
 
           .menu {
 
-            border-radius: 6px;
-            border: 2px solid white;
             display: flex;
-            height: 4.537vh;
+            height: 50px;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
             max-width: 134px;
-            gap: 0.573vw;
+            gap: 11px;
             justify-content: center;
-            width: 6.979vw;
+            width: 134px;
             align-items: center;
 
             &__burger {
@@ -131,19 +118,19 @@
               flex-direction: column;
               height: 100%;
               justify-content: center;
-              row-gap: 0.463vh;
+              row-gap: 6px;
 
               span {
                 background-color: white;
-                width: 1.927vw;
-                height: 0.463vh;
+                width: 36px;
+                height: 5px;
                 border-radius: 4px;
               }
             }
 
             > span {
               font-family: Arial;
-              font-size: 1.2vw;
+              font-size: 21px;
               line-height: 27px;
               font-weight: 400;
               color: #ffffff;
@@ -171,12 +158,12 @@
         position: absolute;
         opacity: 0;
         left: 0;
-        top: 8.426vh;
+        top: 91px;
         z-index: 0;
         right: 0;
         background-color: rgba(255, 255, 255, 0.3);
         transition: all 0.2s ease-in-out;
-        bottom: 0;
+        bottom: -10px;
       }
 
       &:hover {
@@ -190,70 +177,70 @@
     user-select: none;
 
     &__1 {
-      margin-left: 2.188vw;
+      margin-left: 42px;
     }
 
     &__2 {
-      margin-left: 4.219vw;
+      margin-left: 81px;
 
     }
 
     &__3 {
-      margin-left: 4.74vw;
+      margin-left: 91px;
 
     }
 
     &__4 {
-      margin-left: 4.531vw;
+      margin-left: 87px;
     }
 
     &__5 {
-      margin-left: 4.479vw;
+      margin-left: 86px;
     }
 
     &__6 {
-      margin-left: 3.906vw;
+      margin-left: 75px
     }
 
     &__8 {
-      margin-left: 1.458vw;
+      margin-left: 28px;
     }
 
     &__9 {
-      margin-left: 1.354vw;
+      margin-left: 26px;
     }
 
     &__10, &__11, &__14, &__15 {
-      margin-left: 1.563vw;
+      margin-left: 30px;
     }
 
     &__12 {
-      margin-left: 1.771vw;
+      margin-left: 34px;
     }
 
     &__13 {
-      margin-left: 1.719vw;
+      margin-left: 31px;
     }
 
     &__16 {
-      margin-left: 1.615vw;
+      margin-left: 31px;
     }
 
     &__17 {
-      margin-left: 1.667vw;
+      margin-left: 32px;
     }
 
     &__st3-active {
       animation-name: anim2;
-      animation-duration: 1.2s;
-      animation-delay: 0.5s;
+      animation-duration: 1s;
+      animation-delay: 0.4s;
       animation-iteration-count: infinite;
     }
 
     &__st2-active {
       animation-name: anim1;
-      animation-duration: 1.2s;
-      animation-delay: 0.5s;
+      animation-duration: 1s;
+      animation-delay: 0.4s;
       animation-iteration-count: infinite;
     }
 
@@ -263,15 +250,15 @@
 
     &__st3-2-active {
       animation-name: anim2-2;
-      animation-duration: 1.2s;
-      animation-delay: 0.5s;
+      animation-duration: 1s;
+      animation-delay: 0.4s;
       animation-iteration-count: infinite;
     }
 
     &__st2-2-active {
       animation-name: anim1-2;
-      animation-duration: 1.2s;
-      animation-delay: 0.5s;
+      animation-duration: 1s;
+      animation-delay: 0.4s;
       animation-iteration-count: infinite;
     }
 
@@ -312,27 +299,27 @@
       }
 
       .column__shop {
-        margin-top: 1.759vh !important;
+        margin-top: 19px !important;
       }
 
       .column__audio {
-        margin-top: 2.13vh !important;
+        margin-top: 23px !important;
       }
 
       .column__search {
-        margin-top: 2.222vh !important;
+        margin-top: 24px !important;
       }
     }
 
     display: flex;
     flex-direction: column;
-    width: 7.083vw;
+    width: 136px;
     align-items: center;
 
     &__top {
-      width: 7.083vw;
+      width: 136px;
       max-width: 136px;
-      height: 7.222vh;
+      height: 78px;
       background-color: #e9752c;
       display: flex;
       align-items: center;
@@ -341,7 +328,7 @@
 
       span {
         font-family: 'Times New Roman';
-        font-size: 1.51vw;
+        font-size: 29px;
         color: #ffffff;
         text-align: center;
 
@@ -355,10 +342,10 @@
       transition: all 0.1s ease-in-out;
       opacity: 0.3;
       z-index: 5;
-      width: 4.219vw;
-      height: 7.963vh;
+      width: 81px;
+      height: 86px;
       object-fit: cover;
-      margin-top: 1.574vh;
+      margin-top: 17px;
 
       img {
         user-select: none;
@@ -380,9 +367,9 @@
       transition: all 0.1s ease-in-out;
       opacity: 0.3;
       z-index: 5;
-      width: 3.958vw;
-      height: 6.852vh;
-      margin-top: 2.037vh;
+      width: 76px;
+      height: 74px;
+      margin-top: 23px;
 
       img {
         height: 100%;
@@ -402,10 +389,10 @@
     &__video {
       transition: all 0.1s ease-in-out;
       z-index: 5;
-      width: 4.271vw;
-      height: 6.296vh;
+      width: 82px;
+      height: 68px;
       opacity: 0.3;
-      margin-top: 2.315vh;
+      margin-top: 25px;
 
       img {
         object-fit: contain;
@@ -424,9 +411,9 @@
 
     &__search {
       z-index: 5;
-      width: 4.323vw;
-      height: 6.019vh;
-      margin-top: 2.407vh;
+      width: 83px;
+      height: 65px;
+      margin-top: 24px;
       transition: all 0.2s ease-in-out;
 
       img {
@@ -448,13 +435,12 @@
 
   &__row {
     display: flex;
-    row-gap: 2.037vh;
+    row-gap: 27px;
 
-    margin-top: 2.593vh;
+    margin-top: 28px;
 
     &:last-child {
       margin-top: 0;
-      margin-bottom: 2.963vh;
     }
   }
 
@@ -464,36 +450,35 @@
 
   .player {
     display: flex;
-    height: 43.056vh;
-    max-height: 44.815vh;
+    height: 465px;
     flex-direction: column;
-    width: 27.187vw;
+    width: 522px;
     gap: 5px;
     cursor: pointer;
 
     img {
       height: 100%;
       width: 100%;
-      max-height: 35.648vh;
+      max-height: 382px;
       opacity: 0.5;
       flex: 1;
     }
 
     &__top {
-      min-height: 7.222vh;
-      margin-right: 1.979vw;
-      padding-top: 0.556vh;
-      padding-bottom: 0.463vh;
-      padding-left: 0.573vw;
+      min-height: 78px;
+      margin-right: 38px;
+      padding-top: 6px;
+      padding-bottom: 5px;
+      padding-left: 11px;
       background-color: #908a8a;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
 
       span {
-        font-family: Times New Roman;
-        font-size: 2.315vh;
-        line-height: 2vh;
+        font-family: 'Times New Roman';
+        font-size: 25px;
+        line-height: 20px;
         font-weight: 400;
         color: #ffffff;
 
@@ -521,6 +506,8 @@
 .drawer {
 
   .close {
+    height: 19px;
+    width: 19px;
     user-select: none;
   }
 
@@ -528,7 +515,7 @@
   top: 0;
   position: fixed;
   z-index: 999;
-  width: 19.271vw;
+  width: 370px;
   transition: right 0.3s ease-in-out;
   background-color: #7e90a5;
 
@@ -544,7 +531,7 @@
 
   &__top {
     width: 100%;
-    height: 8.333vh;
+    height: 90px;
     background-color: #7e90a5;
     border-bottom: 3px solid #b8babb;
     display: flex;
@@ -555,7 +542,7 @@
 
   &__element {
 
-    height: 8.704vh;
+    height: 94px;
     background-color: #7e90a5;
     border-bottom: 3px solid #b8babb;
     width: 100%;
@@ -571,7 +558,7 @@
 
     span {
       font-family: 'Arial';
-      font-size: 1.51vw;
+      font-size: 29px;
       font-weight: 400;
       color: #ffffff;
       text-align: center;

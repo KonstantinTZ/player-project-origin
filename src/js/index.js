@@ -46,3 +46,28 @@ close.addEventListener('click', (e) => {
         drawer.classList.remove('drawer__open')
     }
 })
+
+
+let cont = document.querySelector(".container");
+
+window.addEventListener("resize", scale);
+
+function scale() {
+    let width = document.body.clientWidth;
+    let height = document.body.clientHeight;
+    let coeff;
+
+    if (width > 1000) {
+        if (width / height > 16 / 9) {
+            coeff = height / 1080;
+        } else {
+            coeff = width / 1920;
+        }
+
+        cont.style.transform = `scale(${coeff})`;
+    } else {
+        cont.style.transform = `none`;
+    }
+}
+
+scale();
