@@ -17,9 +17,10 @@
     top: 7.377vh;
     padding: 0 !important;
 
-    img {
+    video {
       max-height: 38.937vh;
-      object-fit: contain;
+      width: 100%;
+      object-fit: cover;
     }
 
     &__top {
@@ -240,7 +241,7 @@
 
         img {
           width: 5vw;
-          height: 5vh;
+          height: 2vh;
         }
       }
     }

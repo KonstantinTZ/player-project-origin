@@ -2,6 +2,8 @@ const polygons = document.querySelectorAll('.polygon')
 const menu = document.querySelector('.menu')
 const drawer = document.querySelector('.drawer')
 const close = document.querySelector('.close')
+const audios = document.querySelectorAll('.column__audio')
+const dialog = document.getElementById("dialog1");
 
 polygons.forEach(polygon => {
 
@@ -71,3 +73,17 @@ function scale() {
 }
 
 scale();
+
+audios.forEach(audio => {
+    audio.addEventListener("click", () => {
+        dialog.style.visibility = 'visible';
+        scale()
+    });
+})
+
+
+const dialogClose = dialog.querySelector('.dialog__close')
+
+dialogClose.addEventListener("click", () => {
+    dialog.style.visibility = 'hidden';
+});

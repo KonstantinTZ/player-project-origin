@@ -94,7 +94,7 @@
 
             span {
               font-family: 'Arial';
-              font-size: 21px;
+              font-size: 23px;
               font-weight: 400;
               color: #ffffff;
 
@@ -130,7 +130,7 @@
 
             > span {
               font-family: Arial;
-              font-size: 21px;
+              font-size: 23px;
               line-height: 27px;
               font-weight: 400;
               color: #ffffff;
@@ -147,6 +147,8 @@
 
   .column {
 
+    margin-left: auto;
+
     .polygon {
       display: flex;
       width: 100%;
@@ -158,7 +160,7 @@
         position: absolute;
         opacity: 0;
         left: 0;
-        top: 91px;
+        top: 86px;
         z-index: 0;
         right: 0;
         background-color: rgba(255, 255, 255, 0.3);
@@ -175,60 +177,6 @@
 
     position: relative;
     user-select: none;
-
-    &__1 {
-      margin-left: 42px;
-    }
-
-    &__2 {
-      margin-left: 81px;
-
-    }
-
-    &__3 {
-      margin-left: 91px;
-
-    }
-
-    &__4 {
-      margin-left: 87px;
-    }
-
-    &__5 {
-      margin-left: 86px;
-    }
-
-    &__6 {
-      margin-left: 75px
-    }
-
-    &__8 {
-      margin-left: 28px;
-    }
-
-    &__9 {
-      margin-left: 26px;
-    }
-
-    &__10, &__11, &__14, &__15 {
-      margin-left: 30px;
-    }
-
-    &__12 {
-      margin-left: 34px;
-    }
-
-    &__13 {
-      margin-left: 31px;
-    }
-
-    &__16 {
-      margin-left: 31px;
-    }
-
-    &__17 {
-      margin-left: 32px;
-    }
 
     &__st3-active {
       animation-name: anim2;
@@ -299,7 +247,7 @@
       }
 
       .column__shop {
-        margin-top: 19px !important;
+        //margin-top: 19px !important;
       }
 
       .column__audio {
@@ -441,6 +389,23 @@
 
     &:last-child {
       margin-top: 0;
+
+      .column {
+        &:nth-child(1) {
+          margin-left: 0;
+        }
+      }
+
+    }
+
+    &:first-child {
+
+      .column {
+        &:nth-child(2) {
+          margin-left: 42px;
+        }
+      }
+
     }
   }
 
@@ -453,14 +418,27 @@
     height: 383px;
     flex-direction: column;
     width: 522px;
-    gap: 5px;
+    gap: 10px;
     cursor: pointer;
+    position: relative;
 
-    img {
+    video {
       height: 100%;
       width: 100%;
+      object-fit: cover;
       max-height: 294px;
       flex: 1;
+
+    }
+
+    img {
+      position: absolute;
+      right: 13px;
+      height: 47px;
+      width: 47px;
+      top: 101px;
+      opacity: 0.74;
+      box-shadow: 0px 3px 2px 0px #4e97bb;
     }
 
     &__top {
@@ -565,6 +543,141 @@
   }
 }
 
+.dialog {
+
+  &__close {
+    height: 46px;
+    width: 46px;
+    background: url('../../img/close-modal.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.7;
+    border: none;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__top {
+    height: 70px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 0 12px 0 36px;
+    background-image: linear-gradient(to bottom, #fff, #ef8d31);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h4 {
+      font-family: 'Arial';
+      font-size: 41.7px;
+      font-weight: 400;
+      color: #000000;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-left: 281px;
+
+    &:first-child {
+      margin-top: 33px;
+      height: 35px;
+    }
+
+    &:nth-child(2) {
+      margin-top: 27px;
+    }
+
+    &:nth-child(6) {
+      margin-top: 30px;
+    }
+
+    &:nth-child(7) {
+      margin-top: 23px;
+    }
+
+    &:nth-child(8) {
+      margin-top: 28px;
+    }
+
+  }
+
+  &__center {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+
+      h3 {
+        text-align: center;
+        margin-top: 58px;
+        font-family: Arial;
+        font-size: 41.7px;
+        line-height: 43px;
+        font-weight: 700;
+        text-shadow: 0px 4px 3px #000000;
+        color: #139306;
+      }
+
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      h5 {
+        line-height: 51px;
+        margin-top: 21px;
+      }
+
+      .sep {
+        align-self: center;
+        width: 881px;
+        height: 4px;
+        box-shadow: 0px 1px 1px 0px #676666;
+        background-color: #faffaf;
+        margin-top: 13px;
+        margin-bottom: 21px;
+        align-self: center;
+
+      }
+
+      .sub {
+        font-family: Arial;
+        font-size: 33.4px;
+        line-height: 31px;
+        font-weight: 400;
+        font-style: italic;
+        color: #000000;
+        text-align: center;
+        margin-top: 37px;
+      }
+
+      label {
+        font-family: Arial;
+        font-size: 37.5px;
+        line-height: 35px;
+        font-weight: 400;
+        color: #000000;
+      }
+
+    }
+
+    h5 {
+      font-family: Arial;
+      font-size: 54.2px;
+      font-weight: 400;
+      color: #000000;
+      line-height: 45px;
+      text-align: center;
+    }
+  }
+}
+
+
 @keyframes anim1 {
   0% {background-color: rgba(233, 117, 44, 0.3);}
   50% {background-color: rgba(233, 117, 44, 1);}
@@ -587,4 +700,59 @@
   0% {background-color: rgba(125, 97, 155, 0.5);}
   50% {background-color: rgba(125, 97, 155, 1);}
   100% {background-color: rgba(125, 97, 155, 0.5);}
+}
+
+label {
+  white-space: nowrap;
+  span {
+    font-style: italic;
+  }
+}
+
+input[type='radio'] {
+  box-sizing: border-box;
+  display: block;
+  width: 26px;
+  height: 27px;
+  border: none !important;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  text-indent: -99999px;
+  appearance: none;
+  background-image: url("../../img/not.png") !important;
+}
+
+input[type='radio']:hover {
+  width: 26px;
+  height: 27px;
+  border: none !important;
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-image: url("../../img/checked.png") !important;
+  background-size: 100% 100%;
+
+}
+
+input[type='radio']:checked {
+  width: 26px;
+  height: 27px;
+  border: none !important;
+  background-image: url("../../img/checked.png") !important;
+  background-size: 100% 100%;
+
+}
+
+#dialog1 {
+  position: absolute;
+  right: 63px;
+  border-radius: 16px;
+  left: auto;
+  bottom: 55px;
+  top: auto;
+  width: 1237px;
+  height: 837px;
+  background: rgba(252, 254, 231, 0.75);
+  opacity: 1;
+  z-index: 999;
+  visibility: hidden;
 }
