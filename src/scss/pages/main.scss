@@ -545,6 +545,10 @@
 
 .dialog {
 
+  &__dostup {
+    display: none;
+  }
+
   &__close {
     height: 46px;
     width: 46px;
@@ -610,6 +614,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
+    position: relative;
+
+    button {
+      position: absolute;
+      right: 126px;
+      bottom: 124px;
+
+      img {
+        max-width: 178px;
+        max-height: 178px;
+      }
+
+    }
 
     form {
 
@@ -640,7 +658,6 @@
         box-shadow: 0px 1px 1px 0px #676666;
         background-color: #faffaf;
         margin-top: 13px;
-        margin-bottom: 21px;
         align-self: center;
 
       }
@@ -739,7 +756,6 @@ input[type='radio']:checked {
   border: none !important;
   background-image: url("../../img/checked.png") !important;
   background-size: 100% 100%;
-
 }
 
 #dialog1 {
@@ -755,4 +771,6 @@ input[type='radio']:checked {
   opacity: 1;
   z-index: 999;
   visibility: hidden;
+  display: flex;
+  flex-direction: column;
 }

@@ -128,6 +128,7 @@
       margin-top: 3.889vh;
       grid-template-columns: 1fr 1fr;
       height: 76.2vh;
+      gap: 5.488vw;
       margin-bottom: 7.014vh !important;
     }
 
@@ -269,5 +270,161 @@
 
   }
 
+
+  #dialog1 {
+    position: absolute;
+    right: 3.611vw;
+    border-radius: 12px;
+    left: 3.611vw;
+    bottom: 0;
+    top: auto;
+    width: 52.205vw;
+    height: 81.455vh;
+    background: rgba(252, 254, 231, 0.75);
+    opacity: 1;
+    z-index: 999;
+    margin-left: auto;
+    visibility: hidden;
+  }
+
+  .dialog {
+
+    &__dostup {
+      display: block;
+      align-self: center;
+      margin-top: 5.727vh;
+      margin-bottom: 8vh;
+      width: 21.26vw;
+    }
+
+    &__top {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      height: 6.818vh;
+
+    }
+
+    &__close {
+      width: 1.969vw;
+      height: 4.545vh;
+    }
+
+    &__checkbox {
+      padding-left: 12.222vw;
+      gap: 0.551vw;
+
+      &:first-child {
+        margin-top: 3.045vh;
+        height: 3.364vh;
+      }
+
+      &:nth-child(2) {
+        height: 3.364vh;
+        margin-top: 2.636vh;
+      }
+
+      &:nth-child(6) {
+        margin-top: 2.909vh;
+      }
+
+      &:nth-child(7) {
+        margin-top: 2.273vh;
+      }
+
+      &:nth-child(8) {
+        margin-top: 2.727vh;
+      }
+    }
+
+    &__top {
+      height: 6.818vh;
+      padding-right: 0.512vw;
+      padding-left: 1.496vw;
+
+      h4 {
+        font-size: 1.799vw;
+      }
+    }
+
+    &__center {
+      margin-top: 2.273vh;
+
+      button {
+        width: 9vw;
+        height: 17vh;
+        right: 6.181vw;
+        bottom: 11.364vh;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      h5 {
+        font-family: 'Arial';
+        font-size: 2.287vw;
+        font-weight: 400;
+        line-height: 1.89vw;
+        color: #000000;
+      }
+
+      form {
+
+        h3 {
+          display: none;
+        }
+
+        h5 {
+          margin-top: 2.045vh;
+          line-height: 3.273vh;
+        }
+
+        .sep {
+          margin-top: 1.182vh;
+          margin-bottom: 0;
+          width: 37.165vw;
+          height: 5px;
+          box-shadow: 0px 1px 1px 0px #676666;
+        }
+
+        .sub {
+          margin-top: 3.727vh;
+          font-size: 1.406vw;
+          line-height: 1.299vw;
+        }
+
+        label {
+          font-size: 1.583vw;
+          line-height: 1.389vw;
+        }
+
+        h3 {
+          margin-top: 5.409vh;
+          margin-bottom: 7.045vh;
+          font-size: 4.056vw;
+          line-height: 2.455vh;
+          font-weight: 700;
+          text-shadow: 2px 3px 3px #000000;
+          color: #139306;
+        }
+      }
+    }
+  }
+
+  input[type='radio'] {
+    width: 1.1vw;
+    height: 2.2vh;
+  }
+
+  input[type='radio']:hover {
+    width: 1.1vw;
+    height: 2.2vh;
+  }
+
+  input[type='radio']:checked {
+    width: 1.1vw;
+    height: 2.2vh;
+  }
 
 }
