@@ -26,6 +26,7 @@
         font-size: 13.5px !important;
       }
     }
+
   }
 
   .player {
@@ -192,20 +193,12 @@
 
         }
 
-        &__7, &__8, &__9, &__10, &__11, &__12, &__13, &__14, &__15, &__16, &__17 {
-
-          .column__shop {
-            margin-top: 2.636vh !important;
-          }
-
-          .column__audio {
-            margin-top: 3.545vh !important;
-          }
-
-          .column__search {
-            margin-top: 3.545vh !important;
+        &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+          .column__top {
+            background-color: rgba(233, 117, 44, 0.3) ;
           }
         }
+
 
 
         .polygon {
@@ -230,7 +223,7 @@
 
     &__top {
       padding-right: 2.52vw;
-      height: 13.545vh;
+      height: 12vh;
 
       button {
 
@@ -251,7 +244,7 @@
         @include font-size(7px, 46.1px, 380px, 2540px, true);
       }
 
-      &:nth-child(6) {
+      &:nth-child(7) {
         border: none;
       }
     }
@@ -276,7 +269,7 @@
     right: 3.611vw;
     border-radius: 12px;
     left: 3.611vw;
-    bottom: 0;
+    bottom: 2px;
     top: auto;
     width: 52.205vw;
     height: 81.455vh;
@@ -339,10 +332,16 @@
     &__top {
       height: 6.818vh;
       padding-right: 0.512vw;
+      align-items: center;
       padding-left: 1.496vw;
 
       h4 {
+        padding-top: 0;
         font-size: 1.799vw;
+      }
+
+      button {
+        margin-top: 0;
       }
     }
 
@@ -427,4 +426,13 @@
     height: 2.2vh;
   }
 
+  .main__row:last-child .column:nth-child(1) {
+    margin-left: auto !important;
+
+    .column__search {
+      opacity: 1 !important;
+    }
+  }
+
 }
+

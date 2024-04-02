@@ -131,6 +131,8 @@
         .player {
           display: none;
         }
+
+
       }
 
       &:last-child {
@@ -150,7 +152,6 @@
         width: 100%;
         margin-left: 0 !important;
         flex-direction: row;
-
 
         &__shop {
           width: 13.75vw;
@@ -258,7 +259,7 @@
         font-size: 2vh;
       }
 
-      &:nth-child(6) {
+      &:nth-child(7) {
         border: none;
       }
     }
@@ -343,10 +344,16 @@
     &__top {
       height: 3.455vh;
       padding-left: 1.736vw;
-      padding-right: 0.512vw;
+      padding-right: 1vw;
+      align-items: center;
 
       h4 {
         font-size: 3.472vw;
+        padding-top: 0;
+      }
+
+      button {
+        margin-top: 0;
       }
     }
 
@@ -431,5 +438,15 @@
     height: 1.5vh;
   }
 
+  .main__row:last-child .column .column__search {
+    margin-top: 0 !important;
+    opacity: 0.3 !important;
+  }
+
+  .main__row:last-child .column .column__audio {
+    margin-top: 0 !important;
+  }
+
 
 }
+
