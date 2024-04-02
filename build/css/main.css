@@ -796,7 +796,7 @@ input[type=radio] {
   background-position: 0 0;
   text-indent: -99999px;
   appearance: none;
-  background-image: url("../../img/not.png") !important;
+  background-image: url("../img/not.png") !important;
 }
 
 input[type=radio]:hover {
@@ -805,7 +805,7 @@ input[type=radio]:hover {
   border: none !important;
   background-color: transparent !important;
   background-repeat: no-repeat;
-  background-image: url("../../img/checked.png") !important;
+  background-image: url("../img/checked.png") !important;
   background-size: 100% 100%;
 }
 
@@ -813,7 +813,7 @@ input[type=radio]:checked {
   width: 27px;
   height: 27px;
   border: none !important;
-  background-image: url("../../img/checked.png") !important;
+  background-image: url("../img/checked.png") !important;
   background-size: 100% 100%;
 }
 
