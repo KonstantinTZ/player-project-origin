@@ -68,7 +68,9 @@ function scale() {
 
         cont.style.transform = `scale(${coeff})`;
     } else {
-        cont.style.transform = `none`;
+        coeff = width / 2558;
+
+        cont.style.transform = `scale(${coeff})`;
     }
 }
 
