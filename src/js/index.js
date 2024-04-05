@@ -68,7 +68,7 @@ function scale() {
 
         cont.style.transform = `scale(${coeff})`;
     } else if (width > 650) {
-        coeff = width / 2600;
+        coeff = width / 2900;
 
         cont.style.transform = `scale(${coeff})`;
     } else {
