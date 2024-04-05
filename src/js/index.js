@@ -80,7 +80,7 @@ function scale() {
         const top = cont.getBoundingClientRect().top + window.scrollY
 
         if (top > 0) {
-            cont.style.setProperty("height", `${1180 + (7 * top)}px`, "important");
+            cont.style.setProperty("height", `${1180 + (6 * top)}px`, "important");
         } else {
             cont.style.setProperty("height", `${1180 - 100}px`, "important");
         }
@@ -90,8 +90,6 @@ function scale() {
         cont.style.transform = `scale(${coeff})`;
 
         const top = cont.getBoundingClientRect().top + window.scrollY
-
-        console.log(top)
 
         if (top > 0) {
             if (top > 55) {
