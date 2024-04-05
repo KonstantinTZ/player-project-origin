@@ -91,8 +91,14 @@ function scale() {
 
         const top = cont.getBoundingClientRect().top + window.scrollY
 
+        console.log(top)
+
         if (top > 0) {
-            cont.style.setProperty("height", `${2677 + (7 * top)}px`, "important");
+            if (top > 55) {
+                cont.style.setProperty("height", `${2677 + (8 * top)}px`, "important");
+            } else {
+                cont.style.setProperty("height", `${2677 + (7 * top)}px`, "important");
+            }
         } else {
             cont.style.setProperty("height", `${2677 - 100}px`, "important");
         }
