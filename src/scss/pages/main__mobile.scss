@@ -214,7 +214,7 @@
             display: flex;
             align-items: center;
             width: 100%;
-            font-size: 50.3px;
+            font-size: 40.3px;
             height: 100%;
 
             br {
@@ -241,7 +241,7 @@
           &:after {
             top: 0 !important;
             bottom: 0 !important;
-            left: 164px;
+            left: 150px;
           }
 
           button {
@@ -308,9 +308,9 @@
     border-radius: 12px;
     left: 3.611vw;
     bottom: auto;
-    top: 14px;
-    width: 93%;
-    height: auto;
+    top: 299px;
+    width: 1345px;
+    height: 1190px;
     background: rgba(252, 254, 231, 0.9);
     opacity: 1;
     z-index: 999;
@@ -323,56 +323,57 @@
     &__dostup {
       display: block;
       align-self: center;
-      margin-top: 5.409vh;
+      margin-top: 119px;
       margin-bottom: 7.045vh;
-      width: 48.819vw;
+      width: 703px;
+      height: 54px;
     }
 
     &__top {
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
 
     }
 
     &__close {
-      width: 3.472vw;
-      height: 2.273vh;
+      width: 50px;
+      height: 50px;
     }
 
     &__checkbox {
-      padding-left: 12.222vw;
-      gap: 1.458vw;
+      padding-left: 176px;
+      gap: 22px;
 
       &:first-child {
-        margin-top: 3.045vh;
-        height: 2.091vh;
+        margin-top: 67px;
+        height: 46px;
       }
 
       &:nth-child(2) {
-        margin-top: 0.818vh;
+        margin-top: 18px;
       }
 
       &:nth-child(6) {
-        margin-top: 1.591vh;
+        margin-top: 35px;
       }
 
       &:nth-child(7) {
-        margin-top: 1.182vh;
+        margin-top: 26px;
       }
 
       &:nth-child(8) {
-        margin-top: 1.545vh;
+        margin-top: 34px;
       }
     }
 
     &__top {
-      height: 3.455vh;
-      padding-left: 1.736vw;
-      padding-right: 1vw;
+      height: 75px;
+      padding-left: 25px;
+      padding-right: 13px;
       align-items: center;
 
       h4 {
-        font-size: 3.472vw;
+        font-size: 50.1px;
         padding-top: 0;
       }
 
@@ -382,13 +383,13 @@
     }
 
     &__center {
-      margin-top: 2.273vh;
+      margin-top: 50px;
 
       button {
-        width: 18vw;
-        height: 9vh;
-        right: 6.181vw;
-        bottom: 11.364vh;
+        width: 223px;
+        height: 223px;
+        right: 89px;
+        bottom: 235px;
 
         img {
           width: 100%;
@@ -398,9 +399,9 @@
 
       h5 {
         font-family: 'Arial';
-        font-size: 4.34vw;
+        font-size: 62.5px;
         font-weight: 400;
-        line-height: 4.028vw;
+        line-height: 58px;
         color: #000000;
       }
 
@@ -411,31 +412,31 @@
         }
 
         h5 {
-          margin-top: 2.045vh;
-          line-height: 2.682vh;
+          margin-top: 45px;
+          line-height: 59px;
         }
 
         .sep {
-          margin-top: 0.591vh;
+          margin-top: 15px;
           margin-bottom: 0;
-          width: 80.625vw;
+          width: 1161px;
           height: 5px;
           box-shadow: 0px 1px 1px 0px #676666;
         }
 
         .sub {
-          margin-top: 3.773vh;
-          font-size: 2.896vw;
-          line-height: 1.727vh;
+          margin-top: 83px;
+          font-size: 41.7px;
+          line-height: 38px;
         }
 
         label {
-          font-size: 3.472vw;
-          line-height: 1.389vw;
+          font-size: 50px;
+          line-height: 46px;
         }
 
         h3 {
-          margin-top: 5.409vh;
+          margin-top: 119px;
           margin-bottom: 7.045vh;
           font-size: 4.056vw;
           line-height: 2.455vh;
@@ -448,18 +449,18 @@
   }
 
   input[type='radio'] {
-    width: 3vw;
-    height: 1.5vh;
+    width: 31px;
+    height: 31px;
   }
 
   input[type='radio']:hover {
-    width: 3vw;
-    height: 1.5vh;
+    width: 31px;
+    height: 31px;
   }
 
   input[type='radio']:checked {
-    width: 3vw;
-    height: 1.5vh;
+    width: 31px;
+    height: 31px;
   }
 
   .main__row:last-child .column .column__search {
