@@ -54,7 +54,7 @@ let cont = document.querySelector(".container");
 
 window.addEventListener("resize", scale);
 window.addEventListener("orientationchange", () => {
-    setTimeout(() => scale(), 50)
+    setTimeout(() => scale(), 101)
 });
 
 
