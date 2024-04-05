@@ -20,13 +20,16 @@
   }
 
   .container {
-    width: 1920px;
-    max-width: 1920px;
-    overflow: hidden;
-    height: 1080px;
-    margin: 0;
-    flex: 0 0 1920px;
-    padding: 21px 64px 21px 56px;
+
+    @media screen and (min-width: 1025px)  {
+      width: 1920px;
+      max-width: 1920px;
+      overflow: hidden;
+      height: 1080px;
+      margin: 0;
+      flex: 0 0 1920px;
+      padding: 21px 64px 21px 56px;
+    }
   }
 
   &__center {

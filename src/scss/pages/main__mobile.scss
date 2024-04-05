@@ -1,5 +1,9 @@
 @media screen and (max-width: 680px) and (orientation: portrait) {
 
+  .main {
+    overflow: hidden;
+  }
+
   header {
     left: 0;
     right: 0;
@@ -59,10 +63,10 @@
     width: 1450px !important;
     max-width: 1450px !important;
     overflow: hidden !important;
-    height: 2676px !important;
+    height: 2676px;
     margin: 0;
     flex: 0 0 1450px !important;
-    padding: 56px 50px 45px 52px !important;
+    padding: 56px 50px 0px 52px !important;
   }
 
   nav {
@@ -132,13 +136,6 @@
       overflow: scroll;
     }
 
-    .container {
-      width: 100%;
-      padding: 0;
-      height: 100vh;
-      flex: none;
-    }
-
     &__row {
       margin-top: 0;
       margin-right: 49px;
@@ -154,8 +151,7 @@
       }
 
       &:last-child {
-        margin-bottom: 2vh !important;
-
+        padding-bottom: 52px;
         .column {
           &:last-child {
             margin-bottom: 2vh;

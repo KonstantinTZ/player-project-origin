@@ -75,6 +75,14 @@ function scale() {
         coeff = width / 1450;
 
         cont.style.transform = `scale(${coeff})`;
+
+        const top = cont.getBoundingClientRect().top + window.scrollY
+
+        if (top > 0) {
+            cont.style.setProperty("height", `${2677 + (7 * top)}px`, "important");
+        } else {
+            cont.style.setProperty("height", `${2677 - 100}px`, "important");
+        }
     }
 }
 
