@@ -4,52 +4,65 @@
     left: 0;
     right: 0;
     padding: 0 !important;
-    top: 0.82vh;
   }
 
   .player-mobile {
     display: flex !important;
-    margin-top: 0;
-    row-gap: 0.787vh;
+    margin-top: 36px;
+    row-gap: 20px;
     flex-direction: column;
     z-index: 999;
     left: 0;
-    top: 7.377vh;
     padding: 0 !important;
+    position: relative;
 
     video {
-      max-height: 38.937vh;
+      max-height: 758px;
+      height: 758px;
       width: 100%;
       object-fit: cover;
     }
 
+    img {
+      position: absolute;
+      width: 122px;
+      right: 34px;
+      top: 134px;
+      height: 121px;
+      opacity: 0.74;
+      box-shadow: 1px 3px 2px 0px #4e97bb;
+    }
+
     &__top {
-      height: 2.835vh;
+      height: 72px;
       width: 100%;
       background-color: #908a8a;
-      padding-left: 2.708vw;
-      padding-right: 1.667vw;
+      padding-left: 30px;
+      padding-right: 36px;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
 
       span {
-        font-weight: 700;
         color: #ffffff;
         font-family: 'Times New Roman PS';
-        font-size: 4.34vw;
+        font-size: 62.5px;
+        line-height: 75px;
+        font-weight: 700;
       }
     }
   }
 
   .container {
-    width: 100%;
-    max-width: 93.819vw !important;
-    grid-template-rows: 1fr 4fr 6fr;
     display: grid;
-    height: 100vh;
-    overflow: hidden;
+    width: 1450px !important;
+    max-width: 1450px !important;
+    overflow: hidden !important;
+    height: 2676px !important;
+    margin: 0;
+    flex: 0 0 1450px !important;
+    padding: 56px 50px 45px 52px !important;
   }
 
   nav {
@@ -58,7 +71,7 @@
 
     ul {
       justify-content: flex-end !important;
-      gap: 3.889vw;
+      gap: 61px;
 
       li {
         &:nth-child(-n+6) {
@@ -70,35 +83,42 @@
         }
 
         .menu {
-          height: 4.567vh !important;
-          width: 21.597vw !important;
-          gap: 1.597vw !important;
+          width: 310px !important;
+          max-width: 310px !important;
+          height: 115px !important;
+          border: 5px solid #ffffff !important;
+          border-radius: 22px !important;
+
+          gap: 30px !important;
 
           span {
-            font-size: 16px !important;
+            font-size: 56.4px !important;
           }
 
           &__burger {
 
-            row-gap: 0.6vh !important;
+            row-gap: 18px !important;
 
             span {
-              height: 0.433vh !important;
-              width: 5.972vw !important;
+              height: 9px !important;
+              width: 83px !important;
             }
           }
         }
 
         .lk {
           span {
-            font-size: 16px !important;
+            font-size: 56.4px !important;
           }
 
-          gap: 2.222vw !important;
+          height: 98px !important;
+          width: 531px !important;
+          max-width: 531px !important;
+          gap: 30px !important;
 
           img {
-            width: 7.153vw !important;
-            height: 4.055vh !important;
+            width: 98px !important;
+            height: 98px !important;
           }
         }
       }
@@ -106,11 +126,9 @@
   }
 
   .main {
-    height: auto;
-    padding: 0 3.611vw !important;
 
     &__center {
-      margin-top: 2vh;
+      margin-top: 41px;
       overflow: scroll;
     }
 
@@ -123,9 +141,9 @@
 
     &__row {
       margin-top: 0;
-      margin-right: 3.472vw;
+      margin-right: 49px;
       flex-direction: column;
-      row-gap: 0.906vh !important;
+      row-gap: 23px !important;
 
       &:first-child {
         .player {
@@ -154,40 +172,40 @@
         flex-direction: row;
 
         &__shop {
-          width: 13.75vw;
-          height: 8.346vh;
-          margin-left: 3.819vw;
+          width: 198px;
+          height: 212px;
+          margin-left: 55px;
         }
 
         &__audio {
-          margin-left: 4.444vw;
-          width: 15.347vw;
-          height: 8.346vh;
+          width: 221px;
+          height: 212px;
+          margin-left: 64px;
           max-width: max-content;
         }
 
         &__video {
-          margin-left: 4.583vw;
-          width: 15.417vw;
-          height: 7.362vh;
+          margin-left: 66px;
+          width: 222px;
+          height: 187px;
           max-width: max-content;
         }
 
         &__search {
-          margin-left: 4.444vw;
-          width: 15.625vw;
-          height: 6.89vh;
+          margin-left: 66px;
+          width: 225px;
+          height: 175px;
           max-width: max-content;
         }
 
         &__top {
-          max-width: 9.306vw;
-          width: 9.306vw;
+          max-width: 134px;
+          width: 134px;
           height: auto;
-          padding-top: 0.748vh;
-          padding-bottom: 0.591vh;
-          padding-right: 0.833vw;
-          padding-left: 0.786vw;
+          padding-top: 19px;
+          padding-bottom: 12px;
+          padding-right: 12px;
+          padding-left: 7px;
           justify-content: space-between;
 
           span {
@@ -196,7 +214,7 @@
             display: flex;
             align-items: center;
             width: 100%;
-            font-size: 12px;
+            font-size: 50.3px;
             height: 100%;
 
             br {
@@ -206,8 +224,9 @@
             justify-content: space-between;
 
             .frag {
-              @include font-size(15px, 50.3px, 380px, 2540px, true);
               display: block;
+              font-size: 50.3px;
+              padding-left: 5px;
               word-break: break-all;
               line-height: 1;
               max-width: 1.2vw;
@@ -222,7 +241,7 @@
           &:after {
             top: 0 !important;
             bottom: 0 !important;
-            left: 11.389vw;
+            left: 164px;
           }
 
           button {
@@ -234,29 +253,34 @@
   }
 
   .drawer {
-    width: 60%;
+    width: 803px;
+    top: 14px;
 
     &__top {
-      padding-right: 3.346vw;
-      height: 9vh;
+      padding-right: 81px;
+      height: 203px;
 
       button {
 
         display: flex;
         align-items: center;
+        width: 42px !important;
+        height: 41px !important;
 
         img {
-          width: 5vw;
-          height: 2vh;
+          width: 42px;
+          height: 41px;
         }
       }
     }
 
     &__element {
-      height: 10vh;
+      height: 203px;
 
+      border-bottom: 8px solid #b8babb;
       span {
-        font-size: 2vh;
+        font-size: 62.8px;
+        line-height: 56px;
       }
 
       &:nth-child(7) {
@@ -284,7 +308,7 @@
     border-radius: 12px;
     left: 3.611vw;
     bottom: auto;
-    top: 13.636vh;
+    top: 14px;
     width: 93%;
     height: auto;
     background: rgba(252, 254, 231, 0.9);
