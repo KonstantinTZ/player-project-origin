@@ -71,6 +71,14 @@ function scale() {
         coeff = width / 2900;
 
         cont.style.transform = `scale(${coeff})`;
+
+        const top = cont.getBoundingClientRect().top + window.scrollY
+
+        if (top > 0) {
+            cont.style.setProperty("height", `${1180 + (7 * top)}px`, "important");
+        } else {
+            cont.style.setProperty("height", `${1180 - 100}px`, "important");
+        }
     } else {
         coeff = width / 1450;
 
@@ -91,7 +99,6 @@ scale();
 audios.forEach(audio => {
     audio.addEventListener("click", () => {
         dialog.style.visibility = 'visible';
-        scale()
     });
 })
 

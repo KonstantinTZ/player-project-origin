@@ -8,7 +8,7 @@
     width: 2558px !important;
     max-width: 2558px !important;
     overflow: hidden !important;
-    height: 1180px !important;
+    height: 1180px;
     margin: 0;
     flex: 0 0 2558px !important;
     padding: 9px 149px 0px 110px !important;
@@ -149,13 +149,6 @@
 
     &__desk {
       display: none !important;
-    }
-
-    .container {
-      width: 100%;
-      padding: 0;
-      height: 100vh;
-      flex: none;
     }
 
     &__tablet {
