@@ -127,7 +127,7 @@ function scale() {
                 cont.style.setProperty("height", `${2677 + (7 * top)}px`, "important");
             }
         } else {
-            cont.style.setProperty("height", `${2677 - 100}px`, "important");
+            cont.style.setProperty("height", `${2677 - 140}px`, "important");
         }
     }
 }
