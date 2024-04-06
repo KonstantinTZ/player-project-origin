@@ -53,7 +53,6 @@ close.addEventListener('click', (e) => {
 let cont = document.querySelector(".container");
 
 window.addEventListener("resize", scale);
-window.screen.orientation.addEventListener('change', scale)
 
 function scale() {
 
