@@ -27,7 +27,7 @@
       padding-right: 0.63vw !important;
 
       span {
-        font-size: 52.2px !important;
+        font-size: 48.2px !important;
         line-height: 58px !important;
       }
     }
@@ -197,27 +197,44 @@
           width: 151px;
           height: 162px;
           margin-top: 30px;
+
+          img {
+            width: 151px;
+            height: 162px;
+          }
         }
 
         &__audio {
           width: 145px;
           height: 139px;
           margin-top: 44px !important;
-          max-width: max-content;
+
+          img {
+            width: 145px;
+            height: 139px;
+          }
         }
 
         &__video {
           width: 156px;
           height: 129px;
           margin-top: 41px;
-          max-width: max-content;
+
+          img {
+            width: 156px;
+            height: 129px;
+          }
         }
 
         &__search {
           width: 157px;
           height: 123px;
           margin-top: 44px !important;
-          max-width: max-content;
+
+          img {
+            width: 157px;
+            height: 123px;
+          }
         }
 
         &__top {
