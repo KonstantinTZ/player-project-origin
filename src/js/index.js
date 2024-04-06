@@ -52,9 +52,11 @@ close.addEventListener('click', (e) => {
 
 let cont = document.querySelector(".container");
 
-window.addEventListener("resize", scale);
 
 function scale() {
+    let width = document.body.clientWidth;
+    let height = document.body.clientHeight;
+    let coeff;
 
     if (cont.style.height) {
         const height = parseInt(cont.style.height)
@@ -67,9 +69,6 @@ function scale() {
         }
     }
 
-    let width = document.body.clientWidth;
-    let height = document.body.clientHeight;
-    let coeff;
 
     if (width > 1000) {
         if (width / height > 16 / 9) {
@@ -114,17 +113,20 @@ function scale() {
     }
 }
 
-scale();
-
 audios.forEach(audio => {
     audio.addEventListener("click", () => {
         dialog.style.visibility = 'visible';
     });
 })
 
+scale()
 
 const dialogClose = dialog.querySelector('.dialog__close')
 
 dialogClose.addEventListener("click", () => {
     dialog.style.visibility = 'hidden';
+});
+
+window.matchMedia('(orientation: portrait)').addListener(function(m) {
+    scale()
 });
