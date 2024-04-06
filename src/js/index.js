@@ -106,7 +106,7 @@ function scale() {
 
         if (top > 0 || bottom > 0) {
             if (top > 35 || bottom > 35) {
-                cont.style.setProperty("height", `${1180 + (8.5 * top)}px`, "important");
+                cont.style.setProperty("height", `${1180 + (8 * top)}px`, "important");
             } else {
                 cont.style.setProperty("height", `${1180 + (6 * top)}px`, "important");
             }
