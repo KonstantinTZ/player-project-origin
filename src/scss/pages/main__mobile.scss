@@ -20,14 +20,22 @@
     padding: 0 !important;
     position: relative;
 
-    video {
+    .video-js {
       max-height: 758px;
       height: 758px;
       width: 100%;
       object-fit: cover;
+
+      .vjs-poster img {
+        object-fit: cover !important;
+      }
+
+      .vjs-big-play-button {
+        font-size: 7em !important;
+      }
     }
 
-    img {
+    .resize {
       position: absolute;
       width: 122px;
       right: 34px;
@@ -201,17 +209,16 @@
           height: auto;
           padding-top: 19px;
           padding-bottom: 12px;
-          padding-right: 12px;
-          padding-left: 7px;
+          padding-right: 3px;
+          padding-left: 4px;
           justify-content: space-between;
 
           span {
             font-weight: 700;
-            letter-spacing: -0.15em;
             display: flex;
             align-items: center;
             width: 100%;
-            font-size: 40.3px;
+            font-size: 37px;
             height: 100%;
 
             br {
@@ -221,9 +228,9 @@
             justify-content: space-between;
 
             .frag {
-              display: block;
+              display: flex;
               font-size: 50.3px;
-              padding-left: 5px;
+              padding-left: 2px;
               word-break: break-all;
               line-height: 1;
               max-width: 1.2vw;
@@ -468,6 +475,7 @@
   .main__row:last-child .column .column__audio {
     margin-top: 0 !important;
   }
+
 
 }
 

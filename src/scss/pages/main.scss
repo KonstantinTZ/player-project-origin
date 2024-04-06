@@ -412,16 +412,18 @@
     cursor: pointer;
     position: relative;
 
-    video {
+    .video-js {
       height: 100%;
       width: 100%;
       object-fit: cover;
       max-height: 294px;
       flex: 1;
-
+      .vjs-poster img {
+        object-fit: cover !important;
+      }
     }
 
-    img {
+    .resize {
       position: absolute;
       right: 13px;
       height: 47px;

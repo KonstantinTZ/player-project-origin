@@ -34,10 +34,12 @@
                 <span>Презентация: <span class="frag">Фрагмент</span> №1.</span>
                 <span>Заглавие</span>
             </div>
-            <video controls poster="img/player.png">
+            <video  class="video-js"
+                    controls
+                    data-setup="{}"  poster="img/player.png">
                 Your browser does not support the video tag.
             </video>
-            <img src="img/resize.png" alt="resize">
+            <img class="resize" src="img/resize.png" alt="resize">
         </div>
         <div class="main__center main__desk">
             <div class="main__row">
@@ -47,14 +49,17 @@
                         <span>Презентация: <span class="frag">Фрагмент</span> №1</span>
                         <span>Заглавие</span>
                     </div>
-                    <video controls poster="img/player.png">
+                    <video poster="img/player.png" class="video-js"
+                           controls
+                           preload="auto"
+                           data-setup="{}" >
                         Your browser does not support the video tag.
                     </video>
-                    <img src="img/resize.png" alt="resize">
+                    <img class="resize" src="img/resize.png" alt="resize">
                 </div>
                 <div class="main__column column  ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 1</span>
+                        <span><span class="frag">Фрагмент</span><br/>№1</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -73,7 +78,7 @@
                 </div>
                 <div class="main__column column   ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 2</span>
+                        <span><span class="frag">Фрагмент</span><br/>№2</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -92,7 +97,7 @@
                 </div>
                 <div class="main__column column   ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 3</span>
+                        <span><span class="frag">Фрагмент</span><br/>№3</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -111,7 +116,7 @@
                 </div>
                 <div class="main__column column  ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 4</span>
+                        <span><span class="frag">Фрагмент</span><br/>№4</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -130,7 +135,7 @@
                 </div>
                 <div class="main__column column  ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 5</span>
+                        <span><span class="frag">Фрагмент</span><br/>№5</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -149,7 +154,7 @@
                 </div>
                 <div class="main__column column  ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 6</span>
+                        <span><span class="frag">Фрагмент</span><br/>№6</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -170,7 +175,7 @@
             <div class="main__row">
                 <div class="main__column column  ">
                     <div class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 7</span>
+                        <span><span class="frag">Фрагмент</span><br/>№7</span>
                     </div>
                     <div class="polygon">
                         <button class="column__shop">
@@ -189,7 +194,7 @@
                 </div>
                 <div class="main__column column  ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 8</span>
+                        <span><span class="frag">Фрагмент</span><br/>№8</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -208,7 +213,7 @@
                 </div>
                 <div class="main__column column  ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 9</span>
+                        <span><span class="frag">Фрагмент</span><br/>№9</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -227,7 +232,7 @@
                 </div>
                 <div class="main__column column  ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 10</span>
+                        <span><span class="frag">Фрагмент</span><br/>№10</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -246,7 +251,7 @@
                 </div>
                 <div class="main__column column 1 ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 11</span>
+                        <span><span class="frag">Фрагмент</span><br/>№11</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -265,7 +270,7 @@
                 </div>
                 <div class="main__column column 2 ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 12</span>
+                        <span><span class="frag">Фрагмент</span><br/>№12</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -284,7 +289,7 @@
                 </div>
                 <div class="main__column column 3 ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 13</span>
+                        <span><span class="frag">Фрагмент</span><br/>№13</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -303,7 +308,7 @@
                 </div>
                 <div class="main__column column 4 ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 14</span>
+                        <span><span class="frag">Фрагмент</span><br/>№14</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -322,7 +327,7 @@
                 </div>
                 <div class="main__column column 5 ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 15</span>
+                        <span><span class="frag">Фрагмент</span><br/>№15</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -341,7 +346,7 @@
                 </div>
                 <div class="main__column column 6 ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 16</span>
+                        <span><span class="frag">Фрагмент</span><br/>№16</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -360,7 +365,7 @@
                 </div>
                 <div class="main__column column 7 ">
                     <button class="column__top">
-                        <span><span class="frag">Фрагмент</span><br/>№ 17</span>
+                        <span><span class="frag">Фрагмент</span><br/>№17</span>
                     </button>
                     <div class="polygon">
                         <button class="column__shop">
@@ -386,10 +391,13 @@
                     <span>Презентация: <span class="frag">Фрагмент</span> №1<span class="table-only">.</span></span>
                     <span>Заглав</span>
                 </div>
-                <video controls="controls" poster="img/player.png">
+                <video  poster="img/player.png" class="video-js"
+                       controls
+                       preload="auto"
+                       data-setup="{}">
                     Your browser does not support the video tag.
                 </video>
-                <img src="img/resize.png" alt="resize">
+                <img class="resize" src="img/resize.png" alt="resize">
             </div>
             <div class="main__row">
                 <div class="main__column column  ">

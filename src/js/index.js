@@ -54,7 +54,20 @@ let cont = document.querySelector(".container");
 
 window.addEventListener("resize", scale);
 
+window.addEventListener("orientationchange", scale);
+
 function scale() {
+
+    if (cont.style.height) {
+        const height = parseInt(cont.style.height)
+
+        if (height > 2000) {
+            cont.style.setProperty("height", `${1180}px`, "important")
+        } else {
+            cont.style.setProperty("height", `${2677}px`, "important")
+        }
+    }
+
     let width = document.body.clientWidth;
     let height = document.body.clientHeight;
     let coeff;
@@ -75,7 +88,11 @@ function scale() {
         const top = cont.getBoundingClientRect().top + window.scrollY
 
         if (top > 0) {
-            cont.style.setProperty("height", `${1180 + (6 * top)}px`, "important");
+            if (top > 35) {
+                cont.style.setProperty("height", `${1180 + (8.5 * top)}px`, "important");
+            } else {
+                cont.style.setProperty("height", `${1180 + (6 * top)}px`, "important");
+            }
         } else {
             cont.style.setProperty("height", `${1180 - 100}px`, "important");
         }
