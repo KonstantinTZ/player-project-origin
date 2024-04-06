@@ -54,14 +54,13 @@ let cont = document.querySelector(".container");
 
 window.addEventListener("resize", scale);
 
-window.addEventListener("orientationchange", scale);
-
 function scale() {
 
     if (cont.style.height) {
         const height = parseInt(cont.style.height)
 
         if (height > 2000) {
+            console.log(height)
             cont.style.setProperty("height", `${1180}px`, "important")
         } else {
             cont.style.setProperty("height", `${2677}px`, "important")
