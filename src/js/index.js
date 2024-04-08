@@ -146,8 +146,8 @@ dialogClose.addEventListener("click", () => {
     dialog.style.visibility = 'hidden';
 });
 
-window.matchMedia("(orientation: landscape)").addListener(function(m) {
-    scale()
-});
+if (screen.orientation) {
+    screen.orientation.addEventListener("change", scale);
+}
 
-window.addEventListener('orientationchange', scale)
+window.addEventListener('orientationchange', scale,  false)
