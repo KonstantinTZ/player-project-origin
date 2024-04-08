@@ -72,6 +72,8 @@ window.addEventListener("resize", () => {
     }
 });
 
+alert('test')
+
 function scale() {
     try {
         let width = document.body.clientWidth;
