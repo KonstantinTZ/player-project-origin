@@ -86,8 +86,6 @@ try {
             let height = document.body.clientHeight;
             let coeff;
 
-            alert(`${width} ${height}`)
-
             if (cont.style.height) {
                 const height = parseInt(cont.style.height)
 
@@ -122,7 +120,7 @@ try {
                         cont.style.setProperty("height", `${1180 + (6 * top)}px`, "important");
                     }
                 } else {
-                    cont.style.setProperty("height", `${1180 - (Math.abs(top * 3))}px`, "important");
+                    cont.style.setProperty("height", `${1180 - (Math.abs(top * 5))}px`, "important");
                 }
             } else if (!isDesktop()) {
                 coeff = width / 1450;
