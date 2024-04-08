@@ -76,6 +76,8 @@ function scale() {
     let width = document.body.clientWidth;
     let height = document.body.clientHeight;
     let coeff;
+    
+    alert(`${height} ${width}`)
 
     if (cont.style.height) {
         const height = parseInt(cont.style.height)
@@ -133,6 +135,8 @@ function scale() {
     }
 }
 
+scale()
+
 audios.forEach(audio => {
     audio.addEventListener("click", () => {
         dialog.style.visibility = 'visible';
@@ -149,25 +153,8 @@ if (screen.orientation) { // Property doesn't exist on screen in IE11
     screen.orientation.addEventListener("change", scale);
 };
 
-
-function handlePortraitOrLandscape() {
-    if (!isDesktop()) {
-        setTimeout(afterAnUnnoticableDelay,100); // This solves the wrong-firing-order issue on Samsung Browser.
-        function afterAnUnnoticableDelay() {
-            if (screen.orientation) { // Mainly for Android (as of 2022)
-                if (screen.orientation.angle == 0)   {    scale();     }
-                if (screen.orientation.angle == 90)  {    scale();;     }
-                if (screen.orientation.angle == 270) {    scale();;     }
-                if (screen.orientation.angle == 180) {    scale();;     }
-            } else { // Mainly for iOS (as of 2022)
-                if (window.orientation == 0)   {    scale();;     }
-                if (window.orientation == 90)  {    scale();;     }
-                if (window.orientation == -90) {    scale();;     }
-                if (window.orientation == 180) {    scale();;     }
-            }
-        }
-    }
+if (screen.orientation) {
+    window.screen.orientation.addEventListener('change',scale);
+} else {
+    window.addEventListener("orientationchange",scale);
 }
-
-handlePortraitOrLandscape(); // Set for the first time
-window.addEventListener("resize",handlePortraitOrLandscape);
