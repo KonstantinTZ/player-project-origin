@@ -774,3 +774,11 @@ input[type='radio']:checked {
   display: flex;
   flex-direction: column;
 }
+
+.number {
+  span {
+    &:first-child {
+      font-family: "Noto Serif JP", serif !important;
+    }
+  }
+}
