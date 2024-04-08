@@ -147,11 +147,6 @@ dialogClose.addEventListener("click", () => {
     dialog.style.visibility = 'hidden';
 });
 
-if (window.screen.orientation) { // Property doesn't exist on screen in IE11
-    window.screen.orientation.addEventListener("change", handlePortraitOrLandscape);
-};
-
-
 function handlePortraitOrLandscape() {
     if (!isDesktop()) {
         setTimeout(afterAnUnnoticableDelay,100); // This solves the wrong-firing-order issue on Samsung Browser.
@@ -170,3 +165,11 @@ function handlePortraitOrLandscape() {
         }
     }
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+
+    if (screen && screen.orientation !== null) {
+        window.screen.orientation.onchange = scale;
+        scale();
+    }
+});
