@@ -9,6 +9,12 @@
 @import "./pages/main__tablet";
 @import "./pages/main__mobile";
 
+@font-face {
+
+  font-family: times;
+
+  src: url('../img/times-new-roman.ttf.ttf'); }
+
 button {
   padding: 0;
   margin: 0;
