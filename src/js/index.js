@@ -85,13 +85,25 @@ function scale(event) {
         let height = document.body.clientHeight;
         let coeff;
 
-        alert(`${height} ${width}`)
+        Notification.requestPermission().then( function( permission )
+        {
+            if ( permission !== "granted" )
+            {
+                alert( "Notification failed!" );
+                return;
+            }
+
+            navigator.serviceWorker.ready.then( function( registration )
+            {
+                registration.showNotification( "Hello world", { body:`${height} ${width}` } );
+            } );
+
+        } );
 
         if (cont.style.height) {
             const height = parseInt(cont.style.height)
 
             if (height > 2000) {
-                console.log(height)
                 cont.style.setProperty("height", `${1180}px`, "important")
             } else {
                 cont.style.setProperty("height", `${2677}px`, "important")
