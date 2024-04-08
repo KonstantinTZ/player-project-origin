@@ -69,7 +69,7 @@ let cont = document.querySelector(".container");
 window.addEventListener("resize", () => {
     if (isDesktop()) {
         scale()
-    } 
+    }
 });
 
 function scale() {
@@ -147,9 +147,9 @@ dialogClose.addEventListener("click", () => {
     dialog.style.visibility = 'hidden';
 });
 
-window.addEventListener("orientationchange", function() {
-    scale();
-}, false);
+if (screen.orientation) { // Property doesn't exist on screen in IE11
+    screen.orientation.addEventListener("change", scale);
+};
 
 
 function handlePortraitOrLandscape() {
