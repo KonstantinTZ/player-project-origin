@@ -272,10 +272,6 @@ dialogClose.addEventListener("click", () => {
     dialog.style.visibility = 'hidden';
 });
 
-if (screen.orientation) { // Property doesn't exist on screen in IE11
-    screen.orientation.addEventListener("change", scale);
-};
-
 
 function handlePortraitOrLandscape() {
     if (!isDesktop()) {
