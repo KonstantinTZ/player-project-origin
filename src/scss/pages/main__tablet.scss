@@ -251,6 +251,11 @@
           max-width: 254px;
           width: 254px;
           height: 147px;
+
+          .number {
+            font-family: "Noto Serif JP", serif !important;
+            line-height: 1 !important;
+          }
         }
 
         &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
