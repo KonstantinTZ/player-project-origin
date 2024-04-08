@@ -66,16 +66,21 @@ const isDesktop = () => {
 
 let cont = document.querySelector(".container");
 
-window.addEventListener("resize", () => {
-    if (isDesktop()) {
-        scale()
-    }
-});
+// window.addEventListener("resize", () => {
+//     if (isDesktop()) {
+//         scale()
+//     }
+// });
 
-alert('test')
 
-function scale() {
+function scale(event) {
     try {
+
+        if (event) {
+            event.stopPropagation();
+            event.preventDefault();
+        }
+
         let width = document.body.clientWidth;
         let height = document.body.clientHeight;
         let coeff;
