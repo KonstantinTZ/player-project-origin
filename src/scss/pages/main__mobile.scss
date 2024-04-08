@@ -224,6 +224,12 @@
               width: 50px;
               padding-right: 5px;
               flex-wrap: wrap;
+
+              span {
+                &:first-child {
+                  font-weight: 100 !important;
+                }
+              }
             }
 
             br {
