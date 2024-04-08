@@ -86,7 +86,7 @@ try {
             let height = document.body.clientHeight;
             let coeff;
 
-            prompt(`${width}`)
+            alert(`${width} ${height}`)
 
             if (cont.style.height) {
                 const height = parseInt(cont.style.height)
