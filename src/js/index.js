@@ -73,65 +73,69 @@ window.addEventListener("resize", () => {
 });
 
 function scale() {
-    let width = document.body.clientWidth;
-    let height = document.body.clientHeight;
-    let coeff;
-    
-    alert(`${height} ${width}`)
+    try {
+        let width = document.body.clientWidth;
+        let height = document.body.clientHeight;
+        let coeff;
 
-    if (cont.style.height) {
-        const height = parseInt(cont.style.height)
+        alert(`${height} ${width}`)
 
-        if (height > 2000) {
-            console.log(height)
-            cont.style.setProperty("height", `${1180}px`, "important")
-        } else {
-            cont.style.setProperty("height", `${2677}px`, "important")
-        }
-    }
+        if (cont.style.height) {
+            const height = parseInt(cont.style.height)
 
-
-    if (width > 1000) {
-        if (width / height > 16 / 9) {
-            coeff = height / 1080;
-        } else {
-            coeff = width / 1920;
-        }
-
-        cont.style.transform = `scale(${coeff})`;
-    } else if (width > 650 && !isDesktop()) {
-        coeff = width / 2900;
-
-        cont.style.transform = `scale(${coeff})`;
-
-        const top = cont.getBoundingClientRect().top + window.scrollY
-        const bottom = window.innerHeight - (cont.getBoundingClientRect().top + cont.getBoundingClientRect().height)
-
-        if (top > 0 || bottom > 0) {
-            if (top > 35 || bottom > 35) {
-                cont.style.setProperty("height", `${1180 + (7 * top)}px`, "important");
+            if (height > 2000) {
+                console.log(height)
+                cont.style.setProperty("height", `${1180}px`, "important")
             } else {
-                cont.style.setProperty("height", `${1180 + (6 * top)}px`, "important");
+                cont.style.setProperty("height", `${2677}px`, "important")
             }
-        } else {
-            cont.style.setProperty("height", `${1180 - (Math.abs(top * 3))}px`, "important");
         }
-    } else if (!isDesktop()) {
-        coeff = width / 1450;
 
-        cont.style.transform = `scale(${coeff})`;
 
-        const top = cont.getBoundingClientRect().top + window.scrollY
-
-        if (top > 0) {
-            if (top > 55) {
-                cont.style.setProperty("height", `${2677 + (8 * top)}px`, "important");
+        if (width > 1000) {
+            if (width / height > 16 / 9) {
+                coeff = height / 1080;
             } else {
-                cont.style.setProperty("height", `${2677 + (7 * top)}px`, "important");
+                coeff = width / 1920;
             }
-        } else {
-            cont.style.setProperty("height", `${2677 - (Math.abs(top * 3))}px`, "important");
+
+            cont.style.transform = `scale(${coeff})`;
+        } else if (width > 650 && !isDesktop()) {
+            coeff = width / 2900;
+
+            cont.style.transform = `scale(${coeff})`;
+
+            const top = cont.getBoundingClientRect().top + window.scrollY
+            const bottom = window.innerHeight - (cont.getBoundingClientRect().top + cont.getBoundingClientRect().height)
+
+            if (top > 0 || bottom > 0) {
+                if (top > 35 || bottom > 35) {
+                    cont.style.setProperty("height", `${1180 + (7 * top)}px`, "important");
+                } else {
+                    cont.style.setProperty("height", `${1180 + (6 * top)}px`, "important");
+                }
+            } else {
+                cont.style.setProperty("height", `${1180 - (Math.abs(top * 3))}px`, "important");
+            }
+        } else if (!isDesktop()) {
+            coeff = width / 1450;
+
+            cont.style.transform = `scale(${coeff})`;
+
+            const top = cont.getBoundingClientRect().top + window.scrollY
+
+            if (top > 0) {
+                if (top > 55) {
+                    cont.style.setProperty("height", `${2677 + (8 * top)}px`, "important");
+                } else {
+                    cont.style.setProperty("height", `${2677 + (7 * top)}px`, "important");
+                }
+            } else {
+                cont.style.setProperty("height", `${2677 - (Math.abs(top * 3))}px`, "important");
+            }
         }
+    } catch (e) {
+        alert(e)
     }
 }
 
@@ -148,10 +152,6 @@ const dialogClose = dialog.querySelector('.dialog__close')
 dialogClose.addEventListener("click", () => {
     dialog.style.visibility = 'hidden';
 });
-
-if (screen.orientation) { // Property doesn't exist on screen in IE11
-    screen.orientation.addEventListener("change", scale);
-};
 
 if (screen.orientation) {
     window.screen.orientation.addEventListener('change',scale);
