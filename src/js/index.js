@@ -85,21 +85,6 @@ function scale(event) {
         let height = document.body.clientHeight;
         let coeff;
 
-        Notification.requestPermission().then( function( permission )
-        {
-            if ( permission !== "granted" )
-            {
-                alert( "Notification failed!" );
-                return;
-            }
-
-            navigator.serviceWorker.ready.then( function( registration )
-            {
-                registration.showNotification( "Hello world", { body:`${height} ${width}` } );
-            } );
-
-        } );
-
         if (cont.style.height) {
             const height = parseInt(cont.style.height)
 
@@ -162,7 +147,12 @@ scale()
 
 audios.forEach(audio => {
     audio.addEventListener("click", () => {
-        dialog.style.visibility = 'visible';
+        // dialog.style.visibility = 'visible';
+
+        let width = document.body.clientWidth;
+        let height = document.body.clientHeight;
+
+        alert(`${width} ${height}`)
     });
 })
 
@@ -170,6 +160,7 @@ const dialogClose = dialog.querySelector('.dialog__close')
 
 dialogClose.addEventListener("click", () => {
     dialog.style.visibility = 'hidden';
+
 });
 
 if (screen.orientation) {
