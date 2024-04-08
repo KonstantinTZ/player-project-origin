@@ -1,4 +1,3 @@
-import $ from 'jquery'
 
 const polygons = document.querySelectorAll('.polygon')
 const menu = document.querySelector('.menu')
