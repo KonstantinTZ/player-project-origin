@@ -66,11 +66,11 @@ const isDesktop = () => {
 
 let cont = document.querySelector(".container");
 
-window.addEventListener("resize", () => {
-    if (isDesktop()) {
-        scale()
-    }
-});
+// window.addEventListener("resize", () => {
+//     if (isDesktop()) {
+//         scale()
+//     }
+// });
 
 function scale() {
     let width = document.body.clientWidth;
@@ -147,9 +147,12 @@ dialogClose.addEventListener("click", () => {
     dialog.style.visibility = 'hidden';
 });
 
-if (screen.orientation) { // Property doesn't exist on screen in IE11
-    screen.orientation.addEventListener("change", scale);
-};
+
+window.addEventListener("resize", function() {
+    scale()
+
+}, false);
+
 
 
 function handlePortraitOrLandscape() {
