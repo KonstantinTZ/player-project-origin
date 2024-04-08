@@ -69,9 +69,7 @@ let cont = document.querySelector(".container");
 window.addEventListener("resize", () => {
     if (isDesktop()) {
         scale()
-    } else {
-        handlePortraitOrLandscape()
-    }
+    } 
 });
 
 function scale() {
