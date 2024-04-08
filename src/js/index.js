@@ -111,7 +111,7 @@ function scale() {
                 cont.style.setProperty("height", `${1180 + (6 * top)}px`, "important");
             }
         } else {
-            cont.style.setProperty("height", `${1180 - 100}px`, "important");
+            cont.style.setProperty("height", `${1180 - (Math.abs(top * 3))}px`, "important");
         }
     } else if (!isDesktop()) {
         coeff = width / 1450;
@@ -127,8 +127,7 @@ function scale() {
                 cont.style.setProperty("height", `${2677 + (7 * top)}px`, "important");
             }
         } else {
-            console.log(top)
-            cont.style.setProperty("height", `${2677 - 160}px`, "important");
+            cont.style.setProperty("height", `${2677 - (Math.abs(top * 3))}px`, "important");
         }
     }
 }
@@ -150,3 +149,5 @@ dialogClose.addEventListener("click", () => {
 window.matchMedia('(orientation: portrait)').addListener(function(m) {
     scale()
 });
+
+window.addEventListener('orientationchange', scale)
