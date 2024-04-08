@@ -68,6 +68,8 @@ let cont = document.querySelector(".container");
 window.addEventListener("resize", () => {
     if (isDesktop()) {
         scale()
+    } else {
+        handlePortraitOrLandscape()
     }
 });
 
@@ -164,5 +166,3 @@ function handlePortraitOrLandscape() {
         }
     }
 }
-handlePortraitOrLandscape();
-window.addEventListener("resize",handlePortraitOrLandscape); // Update when change happens
