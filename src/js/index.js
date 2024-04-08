@@ -146,8 +146,23 @@ dialogClose.addEventListener("click", () => {
     dialog.style.visibility = 'hidden';
 });
 
-window.matchMedia("(orientation: portrait)").addListener(function(m) {
-    scale()
-});
-
-window.addEventListener('orientationchange', scale,  false)
+function handlePortraitOrLandscape() {
+    if (!isDesktop()) {
+        setTimeout(afterAnUnnoticableDelay,100); // This solves the wrong-firing-order issue on Samsung Browser.
+        function afterAnUnnoticableDelay() {
+            if (screen.orientation) { // Mainly for Android (as of 2022)
+                if (screen.orientation.angle == 0)   {    scale();     }
+                if (screen.orientation.angle == 90)  {    scale();;     }
+                if (screen.orientation.angle == 270) {    scale();;     }
+                if (screen.orientation.angle == 180) {    scale();;     }
+            } else { // Mainly for iOS (as of 2022)
+                if (window.orientation == 0)   {    scale();;     }
+                if (window.orientation == 90)  {    scale();;     }
+                if (window.orientation == -90) {    scale();;     }
+                if (window.orientation == 180) {    scale();;     }
+            }
+        }
+    }
+}
+handlePortraitOrLandscape();
+window.addEventListener("resize",handlePortraitOrLandscape); // Update when change happens
