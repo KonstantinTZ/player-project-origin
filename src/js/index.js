@@ -139,13 +139,16 @@ audios.forEach(audio => {
     });
 })
 
-scale()
-
 const dialogClose = dialog.querySelector('.dialog__close')
 
 dialogClose.addEventListener("click", () => {
     dialog.style.visibility = 'hidden';
 });
+
+if (screen.orientation) { // Property doesn't exist on screen in IE11
+    screen.orientation.addEventListener("change", scale);
+};
+
 
 function handlePortraitOrLandscape() {
     if (!isDesktop()) {
@@ -166,10 +169,5 @@ function handlePortraitOrLandscape() {
     }
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-
-    if (screen && screen.orientation !== null) {
-        window.screen.orientation.onchange = scale;
-        scale();
-    }
-});
+handlePortraitOrLandscape(); // Set for the first time
+window.addEventListener("resize",handlePortraitOrLandscape);
