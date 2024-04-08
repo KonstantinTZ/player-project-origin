@@ -35,5 +35,8 @@
 	},
 	"browserslist": [
 		"last 5 versions"
-	]
+	],
+	"dependencies": {
+		"jquery": "^3.7.1"
+	}
 }

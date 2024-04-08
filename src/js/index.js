@@ -1,3 +1,5 @@
+import $ from 'jquery'
+
 const polygons = document.querySelectorAll('.polygon')
 const menu = document.querySelector('.menu')
 const drawer = document.querySelector('.drawer')
@@ -147,6 +149,14 @@ const dialogClose = dialog.querySelector('.dialog__close')
 dialogClose.addEventListener("click", () => {
     dialog.style.visibility = 'hidden';
 });
+
+window.addEventListener("orientationchange", function() {
+    scale();
+}, false);
+
+if (screen.orientation) { // Property doesn't exist on screen in IE11
+    screen.orientation.addEventListener("change", scale);
+}
 
 function handlePortraitOrLandscape() {
     if (!isDesktop()) {
