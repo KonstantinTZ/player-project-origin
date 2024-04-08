@@ -146,7 +146,7 @@ dialogClose.addEventListener("click", () => {
     dialog.style.visibility = 'hidden';
 });
 
-window.matchMedia('(orientation: portrait)').addListener(function(m) {
+window.matchMedia("(orientation: landscape)").addListener(function(m) {
     scale()
 });
 
