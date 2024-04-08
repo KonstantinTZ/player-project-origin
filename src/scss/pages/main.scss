@@ -444,6 +444,12 @@
       justify-content: space-between;
       flex-direction: column;
 
+      .number {
+        font-family: "Noto Serif JP", serif !important;
+        line-height: 17px !important;
+
+      }
+
       span {
         font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
         font-size: 25px;

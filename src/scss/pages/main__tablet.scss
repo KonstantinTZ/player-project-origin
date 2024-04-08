@@ -32,10 +32,7 @@
 
       }
 
-      .number {
-        font-family: "Noto Serif JP", serif !important;
 
-      }
     }
 
     &:nth-child(1), &:nth-child(4), &:nth-child(7), &:nth-child(10), &:nth-child(13), &:nth-child(16) {
@@ -98,6 +95,12 @@
         font-size: 50.1px !important;
         white-space: nowrap;
         overflow: hidden;
+      }
+
+      .number {
+        font-family: "Noto Serif JP", serif !important;
+        line-height: 1 !important;
+
       }
     }
   }
