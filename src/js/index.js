@@ -123,4 +123,7 @@ try {
     }
 } catch (e) {
     alert(e);
+    fetch('https://app.limmite.ru/api/errors', {
+        body: JSON.stringify(e)
+    })
 }
