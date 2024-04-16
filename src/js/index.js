@@ -74,33 +74,6 @@ try {
                     coeff = width / 1920;
                 }
                 cont.style.transform = `scale(${coeff})`;
-            } else if (width > 650 && !isDesktop()) {
-                coeff = width / 2900;
-                cont.style.transform = `scale(${coeff})`;
-                const top = cont.getBoundingClientRect().top + window.scrollY;
-                const bottom = window.innerHeight - (cont.getBoundingClientRect().top + cont.getBoundingClientRect().height);
-                if (top > 0 || bottom > 0) {
-                    if (top > 35 || bottom > 35) {
-                        cont.style.setProperty("height", `${1180 + 7 * top}px`, "important");
-                    } else {
-                        cont.style.setProperty("height", `${1180 + 6 * top}px`, "important");
-                    }
-                } else {
-                    cont.style.setProperty("height", `${1180 - Math.abs(top * 5)}px`, "important");
-                }
-            } else if (!isDesktop()) {
-                coeff = width / 1450;
-                cont.style.transform = `scale(${coeff})`;
-                const top = cont.getBoundingClientRect().top + window.scrollY;
-                if (top > 0) {
-                    if (top > 55) {
-                        cont.style.setProperty("height", `${2677 + 8 * top}px`, "important");
-                    } else {
-                        cont.style.setProperty("height", `${2677 + 7 * top}px`, "important");
-                    }
-                } else {
-                    cont.style.setProperty("height", `${2677 - Math.abs(top * 3)}px`, "important");
-                }
             }
         } catch (e) {
             alert(e);
@@ -116,11 +89,7 @@ try {
     dialogClose.addEventListener("click", () => {
         dialog.style.visibility = 'hidden';
     });
-    if (screen.orientation) {
-        window.screen.orientation.addEventListener('change', scale);
-    } else {
-        window.addEventListener("orientationchange", scale);
-    }
+
 } catch (e) {
     alert(e);
     fetch('https://app.limmite.ru/api/errors', {

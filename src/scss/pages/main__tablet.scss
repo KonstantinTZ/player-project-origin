@@ -2,20 +2,15 @@
 
 
   header {
+    padding-top: 4.545vh;
   }
 
   .container {
-    width: 2558px !important;
-    max-width: 2558px !important;
-    overflow: hidden !important;
-    height: 1180px;
-    margin: 0;
-    flex: 0 0 2558px !important;
-    padding: 9px 149px 0px 110px !important;
+    width: 100%;
+    max-width: max-content !important;
   }
 
   .column {
-    margin-left: 0 !important;
     &__top {
 
       display: flex;
@@ -27,80 +22,39 @@
       padding-right: 0.63vw !important;
 
       span {
-        font-size: 48.2px !important;
-        line-height: 58px !important;
-
+        line-height: normal !important;
+        font-size: 13.5px !important;
       }
-
-
     }
-
-    &:nth-child(1), &:nth-child(4), &:nth-child(7), &:nth-child(10), &:nth-child(13), &:nth-child(16) {
-      margin-right: 91px;
-    }
-
-    &:nth-child(2), &:nth-child(5), &:nth-child(8), &:nth-child(11), &:nth-child(14), &:nth-child(17) {
-      margin-right: 95px;
-    }
-
-    //&:nth-child(2n) {
-    //  margin-right: 95px;
-    //}
 
   }
 
   .player {
     width: 100% !important;
-    height: 795px !important;
+    height: 100% !important;
+    max-height: 68vh !important;
     gap: 0.909vh !important;
 
-    .resize {
-      top: 124px !important;
-      right: 32px !important;
-      width: 112px !important;
-      height: 112px !important;
-      opacity: 0.74 !important;
-      box-shadow: 1px 3px 2px 0px #4e97bb !important;
-    }
-
-    .video-js {
-      max-height: 700px !important;
+    video {
+      max-height: 100% !important;
       width: 100%;
-      height: 100% !important;
-
-      .vjs-poster img {
-        object-fit: cover !important;
-      }
-
-      .vjs-big-play-button {
-        font-size: 7em !important;
-      }
     }
 
     &__top {
-      width: 1198px !important;
-      padding-left: 21px !important;
-      padding-right: 5px !important;
-      height: 84px !important;
-      min-height: 84px !important;
+      padding-left: 1.22vw !important;
+      padding-right: 0.039vw !important;
+      height: 7.455vh !important;
+      min-height: 7.455vh !important;
       margin-right: 0 !important;
       flex-direction: row !important;
       justify-content: flex-start !important;
-      gap: 10px;
+      gap: 1vw;
 
       span {
         font-weight: 700 !important;
-        font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+        font-family: 'Times New Roman PS';
         line-height: normal !important;
-        font-size: 50.1px !important;
-        white-space: nowrap;
-        overflow: hidden;
-      }
-
-      .number {
-        font-family: "Noto Serif JP", serif !important;
-        line-height: 1 !important;
-
+        @include font-size(7px, 47.8px, 380px, 2540px, true);
       }
     }
   }
@@ -111,7 +65,7 @@
 
     ul {
       justify-content: flex-end !important;
-      gap: 63px;
+      gap: 3.889vw;
 
       li {
         &:nth-child(-n+6) {
@@ -123,41 +77,33 @@
         }
 
         .menu  {
-          width: 324px !important;
-          max-width: 324px !important;
-          height: 121px !important;
-          border: 5px solid #ffffff !important;
-          border-radius: 24px !important;
-
-          gap: 28px !important;
+          height: 10.909vh !important;
+          width: 12.913vw !important;
+          gap: 1.597vw !important;
 
           span {
-            font-size: 56.4px !important;
+            font-size: 16px !important;
           }
 
           &__burger {
 
-            row-gap: 19px !important;
+            row-gap: 1.3vh !important;
 
             span {
-              height: 9px !important;
-              width: 91px !important;
+              height: 0.85vh !important;
+              width: 3.543vw !important;
             }
           }
         }
 
         .lk {
-          margin-top: 10px;
-          width: 565px;
-          max-width: 565px !important;
-          height: 106px;
           span {
-            font-size: 56.4px !important;
+            font-size: 16px !important;
           }
-          gap: 35px !important;
+          gap: 2vw !important;
           img {
-            width: 106px !important;
-            height: 106px !important;
+            width: 9.909vh !important;
+            height: 9.909vh !important;
           }
         }
       }
@@ -165,28 +111,35 @@
   }
 
   .main {
+    padding: 0 3.611vw !important;
 
     &__desk {
       display: none !important;
     }
 
+    .container {
+      width: 100%;
+      padding: 0;
+      height: 100vh;
+      flex: none;
+    }
+
     &__tablet {
       display: grid !important;
-      margin-top: 16px;
-      grid-template-columns: 1244px 1fr;
-      height: 100%;
-      gap: 103px ;
-      overflow: hidden;
+      margin-top: 3.889vh;
+      grid-template-columns: 1fr 1fr;
+      height: 76.2vh;
+      gap: 5.488vw;
+      margin-bottom: 7.014vh !important;
     }
 
     &__row {
-      margin-bottom: 140px;
-      margin-top: 0 !important;
-      row-gap: 14px !important;
+      margin-top: 3.727vh !important;
+      row-gap: 12vh !important;
       flex-wrap: wrap;
       display: grid;
       overflow-y: scroll;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
 
       &:last-child {
         margin-top: 0 !important;
@@ -194,8 +147,7 @@
 
       .column {
 
-        width: 254px;
-        height: 882px;
+        width: 9.016vw;
 
         &__1 {
           margin-left: 4.488vw !important;
@@ -204,58 +156,41 @@
         margin-left: auto;
 
         &__shop {
-          width: 151px;
-          height: 162px;
-          margin-top: 30px;
-
-          img {
-            width: 151px;
-            height: 162px;
-          }
+          width: 5.354vw;
+          height: 13.273vh;
+          margin-top: 2.636vh;
         }
 
         &__audio {
-          width: 145px;
-          height: 139px;
-          margin-top: 44px !important;
-
-          img {
-            width: 145px;
-            height: 139px;
-          }
+          width: 5.039vw;
+          height: 11.364vh;
+          margin-top: 3.545vh;
+          max-width: max-content;
         }
 
         &__video {
-          width: 156px;
-          height: 129px;
-          margin-top: 41px;
-
-          img {
-            width: 156px;
-            height: 129px;
-          }
+          width: 5.394vw;
+          height: 10.636vh;
+          margin-top: 3.545vh;
+          max-width: max-content;
         }
 
         &__search {
-          width: 157px;
-          height: 123px;
-          margin-top: 44px !important;
-
-          img {
-            width: 157px;
-            height: 123px;
-          }
+          width: 5.512vw;
+          height: 9.909vh;
+          margin-top: 3.545vh;
+          max-width: max-content;
         }
 
         &__top {
-          max-width: 254px;
-          width: 254px;
-          height: 147px;
+          max-width: 9.306vw;
+          width: 9.016vw;
+          height: 12vh;
+          padding-top: 0.748vh;
+          padding-bottom: 0.591vh;
+          padding-right: 0.833vw;
+          padding-left: 0.486vw;
 
-          .number {
-            font-family: "Noto Serif JP", serif !important;
-            line-height: 1 !important;
-          }
         }
 
         &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
@@ -270,8 +205,7 @@
           align-items: center;
 
           &:after {
-            top: 167px !important;
-            bottom: 0 !important;
+            top: 13.818vh !important;
           }
 
 
@@ -283,34 +217,31 @@
 
 
   .drawer {
+    top: 10px;
 
-    width: 594px;
-    height: auto;
+    width: 23.189vw;
 
     &__top {
-      padding-right: 64px;
-      height: 150px;
+      padding-right: 2.52vw;
+      height: 12vh;
 
       button {
 
         display: flex;
         align-items: center;
-        width: 31px !important;
-        height: 30px !important;
 
         img {
-          height: 100%;
-          width: 100%;
+          width: 1.22vw;
+          height: 2.727vh;
         }
       }
     }
 
     &__element {
-      height: 150px;
+      height: 13.545vh;
 
       span {
-        font-size: 46.5px;
-        line-height: 41px;
+        @include font-size(7px, 46.1px, 380px, 2540px, true);
       }
 
       &:nth-child(7) {
@@ -335,14 +266,14 @@
 
   #dialog1 {
     position: absolute;
-    right: 54px;
-    border-radius: 16px;
-    left: auto;
-    bottom: auto;
-    top: 140px;
-    width: 1422px;
-    height: 962px;
-    background: rgba(250, 253, 220, 0.70);
+    right: 3.611vw;
+    border-radius: 12px;
+    left: 3.611vw;
+    bottom: 2px;
+    top: auto;
+    width: 52.205vw;
+    height: 81.455vh;
+    background: rgba(252, 254, 231, 0.75);
     opacity: 1;
     z-index: 999;
     margin-left: auto;
@@ -354,63 +285,59 @@
     &__dostup {
       display: block;
       align-self: center;
-      margin-top: 63px;
-      margin-bottom: 88px;
-      height: 41px;
-      width: 541px;
+      margin-top: 5.727vh;
+      margin-bottom: 8vh;
+      width: 21.26vw;
     }
 
     &__top {
-      border-top-left-radius: 16px;
-      border-top-right-radius: 16px;
-      height: 80px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      height: 6.818vh;
 
     }
 
     &__close {
-      width: 54px;
-      height: 54px;
+      width: 1.969vw;
+      height: 4.545vh;
     }
 
     &__checkbox {
-      padding-left: 301px;
-      gap: 16px;
+      padding-left: 12.222vw;
+      gap: 0.551vw;
 
       &:first-child {
-        margin-top: 37px;
-        height: 37px;
+        margin-top: 3.045vh;
+        height: 3.364vh;
       }
 
       &:nth-child(2) {
-        height: 37px;
-        margin-top: 30px;
+        height: 3.364vh;
+        margin-top: 2.636vh;
       }
 
       &:nth-child(6) {
-        margin-top: 31px;
+        margin-top: 2.909vh;
       }
 
       &:nth-child(7) {
-        margin-top: 25px;
+        margin-top: 2.273vh;
       }
 
       &:nth-child(8) {
-        margin-top: 31px;
+        margin-top: 2.727vh;
       }
     }
 
     &__top {
-      height: 80px;
-      padding-right: 14px;
+      height: 6.818vh;
+      padding-right: 0.512vw;
       align-items: center;
-      padding-left: 44px;
+      padding-left: 1.496vw;
 
       h4 {
         padding-top: 0;
-        font-size: 48.9px;
-        line-height: 18px;
-
-        color: #000000;
+        font-size: 1.799vw;
       }
 
       button {
@@ -419,25 +346,25 @@
     }
 
     &__center {
-      margin-top: 30px;
+      margin-top: 2.273vh;
 
       button {
-        width: 191px;
-        height: 191px;
-        right: 135px;
-        bottom: 133px;
+        width: 9vw;
+        height: 17vh;
+        right: 6.181vw;
+        bottom: 11.364vh;
 
         img {
-          width: 191px;
-          height: 191px;
+          width: 100%;
+          height: 100%;
         }
       }
 
       h5 {
-        font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
-        font-size: 62.3px;
+        font-family: 'Arial';
+        font-size: 2.287vw;
         font-weight: 400;
-        line-height: 57px;
+        line-height: 1.89vw;
         color: #000000;
       }
 
@@ -448,27 +375,27 @@
         }
 
         h5 {
-          margin-top: 22px;
-          line-height: 55px;
+          margin-top: 2.045vh;
+          line-height: 3.273vh;
         }
 
         .sep {
-          margin-top: 14px;
+          margin-top: 1.182vh;
           margin-bottom: 0;
-          width: 944px;
-
+          width: 37.165vw;
           height: 5px;
           box-shadow: 0px 1px 1px 0px #676666;
         }
 
         .sub {
-          margin-top: 40px;
-          font-size: 35.8px;
+          margin-top: 3.727vh;
+          font-size: 1.406vw;
+          line-height: 1.299vw;
         }
 
         label {
-          font-size: 40.2px;
-          line-height: normal !important;
+          font-size: 1.583vw;
+          line-height: 1.389vw;
         }
 
         h3 {
@@ -485,21 +412,22 @@
   }
 
   input[type='radio'] {
-    width: 30px;
-    height: 32px;
+    width: 1.1vw;
+    height: 2.2vh;
   }
 
   input[type='radio']:hover {
-    width: 30px;
-    height: 32px;
+    width: 1.1vw;
+    height: 2.2vh;
   }
 
   input[type='radio']:checked {
-    width: 30px;
-    height: 32px;
+    width: 1.1vw;
+    height: 2.2vh;
   }
 
   .main__row:last-child .column:nth-child(1) {
+    margin-left: auto !important;
 
     .column__search {
       opacity: 1 !important;
