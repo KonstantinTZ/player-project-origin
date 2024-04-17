@@ -59,6 +59,7 @@ try {
             let width = document.body.clientWidth;
             let height = document.body.clientHeight;
             let coeff;
+
             if (cont.style.height) {
                 const height = parseInt(cont.style.height);
                 if (height > 2000) {
