@@ -28,6 +28,10 @@
         @media screen and (max-width: 800px) and (min-width: 701px) {
           font-size: 1.9vw !important;
         }
+        @media screen and (max-width: 700px) {
+          font-size: 2.4vw !important;
+
+        }
       }
     }
 
@@ -242,7 +246,9 @@
             margin-top: 2.818vh;
           }
           @media screen and (max-width: 700px) {
-
+            width: 6.732vw !important;
+            height: 16.636vh !important;
+            margin-top: 1.7vh !important;
           }
         }
 
@@ -257,7 +263,9 @@
             margin-top: 4.091vh;
           }
           @media screen and (max-width: 700px) {
-
+            width: 6.378vw !important;
+            height: 14.273vh !important;
+            margin-top: 1.7vh !important;
           }
         }
 
@@ -272,7 +280,9 @@
             margin-top: 3.727vh;
           }
           @media screen and (max-width: 700px) {
-
+            width: 6.772vw !important;
+            height: 13.273vh !important;
+            margin-top: 1.7vh !important;
           }
         }
 
@@ -282,12 +292,14 @@
           margin-top: 3.091vh !important;
 
           @media screen and (max-width: 800px) and (min-width: 701px) {
-            width: 6.181vw;
-            height: 11.091vh;
-            margin-top: 4vh;
+            width: 6.181vw !important;
+            height: 11.091vh !important;
+            margin-top: 4vh !important;
           }
           @media screen and (max-width: 700px) {
-
+            width: 6.969vw !important;
+            height: 12.455vh !important;
+            margin-top: 1.7vh !important;
           }
         }
 
@@ -301,6 +313,13 @@
             font-family: "Noto Serif JP", serif !important;
             line-height: 1 !important;
           }
+          @media screen and (max-width: 800px) and (min-width: 701px) {
+            height: 13.364vh;
+          }
+          @media screen and (max-width: 700px) {
+            height: 15.091vh;
+          }
+
 
         }
 
@@ -318,6 +337,13 @@
           &:after {
             top: 12.727vh !important;
             bottom: -1.182vh !important;
+
+            @media screen and (max-width: 800px) and (min-width: 701px) {
+              top: 15.3vh !important;
+            }
+            @media screen and (max-width: 700px) {
+              top: 17vh !important;
+            }
           }
 
 
@@ -384,8 +410,8 @@
     right: 3.611vw;
     border-radius: 12px;
     left: 3.611vw;
-    bottom: 2px;
-    top: auto;
+    bottom: auto;
+    top: 11.5vh;
     width: 52.205vw;
     height: 81.455vh;
     background: rgba(252, 254, 231, 0.75);
@@ -400,21 +426,22 @@
     &__dostup {
       display: block;
       align-self: center;
-      margin-top: 5.727vh;
+      margin-top: 6.364vh;
       margin-bottom: 8vh;
-      width: 21.26vw;
+      width: 22.756vw;
+      height: 4.182vh;
     }
 
     &__top {
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
+      border-top-left-radius: 0.872vw;
+      border-top-right-radius: 0.872vw;
       height: 6.818vh;
 
     }
 
     &__close {
-      width: 1.969vw;
-      height: 4.545vh;
+      width: 2.047vw;
+      height: 2.047vw;
     }
 
     &__checkbox {
@@ -422,25 +449,25 @@
       gap: 0.551vw;
 
       &:first-child {
-        margin-top: 3.045vh;
+        margin-top: 3vh;
         height: 3.364vh;
       }
 
       &:nth-child(2) {
         height: 3.364vh;
-        margin-top: 2.636vh;
+        margin-top: 2vh;
       }
 
       &:nth-child(6) {
-        margin-top: 2.909vh;
+        margin-top: 3vh;
       }
 
       &:nth-child(7) {
-        margin-top: 2.273vh;
+        margin-top: 1vh;
       }
 
       &:nth-child(8) {
-        margin-top: 2.727vh;
+        margin-top: 1vh;
       }
     }
 
@@ -464,10 +491,10 @@
       margin-top: 2.273vh;
 
       button {
-        width: 9vw;
-        height: 17vh;
-        right: 6.181vw;
-        bottom: 11.364vh;
+        width: 8.071vw;
+        height: 8.071vw;
+        right: 5.669vw;
+        bottom: 12.818vh;
 
         img {
           width: 100%;
@@ -477,7 +504,7 @@
 
       h5 {
         font-family: 'Arial';
-        font-size: 2.287vw;
+        font-size: 2.441vw;
         font-weight: 400;
         line-height: 1.89vw;
         color: #000000;
@@ -498,19 +525,19 @@
           margin-top: 1.182vh;
           margin-bottom: 0;
           width: 37.165vw;
-          height: 5px;
+          height: 0.455vh;
           box-shadow: 0px 1px 1px 0px #676666;
         }
 
         .sub {
           margin-top: 3.727vh;
-          font-size: 1.406vw;
-          line-height: 1.299vw;
+          font-size: 1.496vw;
+          line-height: normal;
         }
 
         label {
-          font-size: 1.583vw;
-          line-height: 1.389vw;
+          font-size: 1.693vw;
+          line-height: normal;
         }
 
         h3 {
@@ -527,18 +554,18 @@
   }
 
   input[type='radio'] {
-    width: 1.1vw;
-    height: 2.2vh;
+    width: 1.181vw;
+    height: 1.181vw;
   }
 
   input[type='radio']:hover {
-    width: 1.1vw;
-    height: 2.2vh;
+    width: 1.181vw;
+    height: 1.181vw;
   }
 
   input[type='radio']:checked {
-    width: 1.1vw;
-    height: 2.2vh;
+    width: 1.181vw;
+    height: 1.181vw;
   }
 
   .main__row:last-child .column:nth-child(1) {
