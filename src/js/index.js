@@ -60,14 +60,6 @@ try {
             let height = document.body.clientHeight;
             let coeff;
 
-            if (cont.style.height) {
-                const height = parseInt(cont.style.height);
-                if (height > 2000) {
-                    cont.style.setProperty("height", `${1180}px`, "important");
-                } else {
-                    cont.style.setProperty("height", `${2677}px`, "important");
-                }
-            }
             if (width > 1000) {
                 if (width / height > 16 / 9) {
                     coeff = height / 1080;

@@ -22,7 +22,7 @@
       height: 8.531vw;
       position: absolute;
       right: 2.378vw;
-      top: 5.636vh;
+      top: 5vh;
       opacity: 0.74;
       box-shadow: 1px 3px 2px 0px #4e97bb;
     }
@@ -128,7 +128,7 @@
 
     &__center {
       margin-top: 2vh;
-      overflow: scroll;
+      overflow-y: scroll;
     }
 
     .container {
@@ -171,39 +171,36 @@
         flex-direction: row;
 
         &__shop {
-          width: 13.75vw;
-          height: 8.346vh;
-          margin-left: 3.819vw;
+          width: 13.655vw;
+          height: 9.55vh;
+          margin-left: 3.793vw;
         }
 
         &__audio {
           margin-left: 4.444vw;
-          width: 15.347vw;
-          height: 8.346vh;
-          max-width: max-content;
+          width: 15.241vw;
+          height: 9.55vh;
         }
 
         &__video {
-          margin-left: 4.583vw;
-          width: 15.417vw;
-          height: 7.362vh;
-          max-width: max-content;
+          margin-left: 4.414vw;
+          width: 15.31vw;
+          height: 8.423vh;
         }
 
         &__search {
-          margin-left: 4.444vw;
-          width: 15.625vw;
-          height: 6.89vh;
-          max-width: max-content;
+          margin-left: 4.552vw;
+          width: 15.517vw;
+          height: 7.883vh;
         }
 
         &__top {
-          max-width: 9.306vw;
-          width: 9.306vw;
+          max-width: 11vw;
+          width: 11vw;
           height: auto;
           padding-top: 0.748vh;
           padding-bottom: 0.591vh;
-          padding-right: 0vw;
+          padding-right: 0.5vw;
           padding-left: 0.2vw;
           justify-content: space-between;
 
@@ -260,6 +257,7 @@
             top: 0 !important;
             bottom: 0 !important;
             left: 11.389vw;
+            right: -2vw;
           }
 
           button {
@@ -491,5 +489,22 @@
   .video-js .vjs-big-play-button {
     font-size: 5vw !important;
   }
+
+  ::-webkit-scrollbar {
+    width: 1.724vw;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 0.862vw;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #b0afb3;
+    border-radius: 0.862vw;
+    opacity: 0.3;
+  }
+
 }
 
