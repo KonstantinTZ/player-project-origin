@@ -70,6 +70,12 @@
     &__top {
       padding-left: 1.22vw !important;
       padding-right: 0.039vw !important;
+      padding-top: 0 !important;
+      align-items: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-bottom: 0 !important;
       height: 7.636vh !important;
       min-height: 7.636vh !important;
       margin-right: 1.811vw !important;
@@ -85,7 +91,7 @@
         font-weight: 700 !important;
         font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
         line-height: normal !important;
-        font-size: 2.1vw !important;
+        font-size: 2vw !important;
         ;
       }
 

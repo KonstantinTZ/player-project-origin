@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   position: relative;
   background-position: center;
+  overflow: hidden;
   display: flex;
   align-items: center;
   margin: 0;
@@ -150,6 +151,19 @@
 
   .column {
 
+    .polygon:hover > .column__shop, .polygon:hover > .column__audio, .polygon:hover > .column__video, .polygon:hover > .column__search {
+      opacity: 0.5;
+    }
+
+
+    &__active {
+      opacity: 1 !important;
+    }
+
+    &__hover {
+      opacity: 0.7 !important;
+    }
+
     margin-left: auto;
 
     .polygon {
@@ -268,13 +282,6 @@
         object-fit: contain;
       }
 
-      &:hover {
-        opacity: 0.7 !important;
-      }
-
-      &:active {
-        opacity: 1 !important;
-      }
     }
 
     &__audio {
@@ -291,13 +298,7 @@
         object-fit: contain;
       }
 
-      &:hover {
-        opacity: 0.7 !important;
-      }
 
-      &:active {
-        opacity: 1 !important;
-      }
     }
 
     &__video {
@@ -314,13 +315,6 @@
         width: 100%;
       }
 
-      &:hover {
-        opacity: 0.7 !important;
-      }
-
-      &:active {
-        opacity: 1 !important;
-      }
     }
 
     &__search {
@@ -336,13 +330,6 @@
         width: 100%;
       }
 
-      &:hover {
-        opacity: 0.7 !important;
-      }
-
-      &:active {
-        opacity: 1 !important;
-      }
     }
 
   }
@@ -460,18 +447,15 @@
         @media screen and (min-width: 2000px) {
           font-size: 25px;
         }
+        
+        &:last-child {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
       }
     }
   }
-}
-
-.column {
-
-
-  .polygon:hover > .column__shop, .polygon:hover > .column__audio, .polygon:hover > .column__video, .polygon:hover > .column__search {
-    opacity: 0.5;
-  }
-
 }
 
 .polygon:hover + .column__top {
@@ -623,9 +607,14 @@
       right: 126px;
       bottom: 124px;
       transition: transform 0.3s ease;
+      transform: translateY(0px) scale(0.9);
 
       &:active {
-        transform: scale(0.99);
+        transform: translateY(2px) scale(1);
+      }
+
+      &:hover {
+        transform: translateY(0px) scale(1);
       }
 
       img {

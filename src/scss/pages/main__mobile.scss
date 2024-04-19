@@ -28,10 +28,10 @@
     }
 
     .video-js {
-      max-height: 25.455vh;
-      height: 25.455vh;
+      min-height: 25.455vh;
       border: none !important;
       width: 100%;
+      height: 100%;
       object-fit: cover;
 
       .vjs-poster img {
@@ -66,6 +66,12 @@
     padding-top: 1.545vh !important;
     height: 100vh;
     overflow: hidden;
+
+    grid-template-rows: 4.3vh 1fr 2fr;
+
+    @media screen and (max-height: 750px) {
+      grid-template-rows: 4.3vh 1.15fr 2fr;
+    }
   }
 
   nav {
@@ -93,15 +99,26 @@
 
           span {
             font-size: 4.371vw !important;
+
+            @media screen and (max-height: 750px) {
+              font-size: 4.2vw !important;
+            }
           }
 
           &__burger {
 
             row-gap: 0.6vh !important;
 
+            @media screen and (max-height: 750px) {
+              row-gap: 0.5vh !important;
+            }
+
             span {
               height: 0.32vh !important;
               width: 6.014vw !important;
+
+              @media screen and (max-height: 750px) {
+              }
             }
           }
         }
@@ -109,6 +126,10 @@
         .lk {
           span {
             font-size: 4.371vw !important;
+
+            @media screen and (max-height: 750px) {
+              font-size: 4vw !important;
+            }
           }
 
           gap: 2.222vw !important;
@@ -210,7 +231,7 @@
             display: flex;
             align-items: center;
             width: 100%;
-            font-size: 2.3vw;
+            font-size: 2.56vw;
             height: 100%;
 
             .number {
