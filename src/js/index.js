@@ -60,7 +60,7 @@ try {
             let height = document.body.clientHeight;
             let coeff;
 
-            if (width > 1000) {
+            if (width > 800) {
                 if (width / height > 16 / 9) {
                     coeff = height / 1080;
                 } else {
