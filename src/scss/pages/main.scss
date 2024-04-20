@@ -101,7 +101,8 @@
               font-size: 23px;
               font-weight: 400;
               color: #ffffff;
-
+              overflow: hidden;
+              text-overflow: ellipsis;
             }
           }
 
