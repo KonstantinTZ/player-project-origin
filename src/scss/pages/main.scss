@@ -161,6 +161,14 @@
       opacity: 1 !important;
     }
 
+    &__top_active_1 {
+      background-color: rgba(233, 117, 44, 1) !important;
+    }
+
+    &__top_active_2 {
+      background-color: rgba(125, 97, 155, 1) !important;
+    }
+
     &__hover {
       opacity: 0.7 !important;
     }
@@ -377,10 +385,6 @@
 
         &:nth-child(2) {
           margin-left: 42px;
-
-          .column__search {
-            opacity: 1 !important;
-          }
         }
       }
 
