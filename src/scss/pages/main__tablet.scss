@@ -92,7 +92,13 @@
         font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
         line-height: normal !important;
         font-size: 2vw !important;
-        ;
+
+        &:last-child {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          max-width: 10vw;
+        }
       }
 
       .number {
