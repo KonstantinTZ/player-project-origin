@@ -35,5 +35,9 @@
 	},
 	"dependencies": {
 		"jquery": "^3.7.1"
-	}
+	},
+	"scripts": {
+		"gulp": "gulp"
+	   }
+	  
 }
