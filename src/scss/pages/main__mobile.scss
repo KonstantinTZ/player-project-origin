@@ -100,7 +100,7 @@
         }
 
         .menu {
-          height: 4.3vh !important;
+          height: 4.9vh !important;
           width: 23vw !important;
           gap: 1.597vw !important;
           border: 2px solid white !important;
@@ -118,7 +118,7 @@
             row-gap: 0.6vh !important;
 
             @media screen and (max-height: 700px) and (max-width: 500px) {
-              row-gap: 0.5vh !important;
+              row-gap: 0.8vh !important;
             }
 
             span {
@@ -369,7 +369,7 @@
       display: block;
       align-self: center;
       margin-top: 5.409vh;
-      margin-bottom: 7.045vh;
+      margin-bottom: 5.045vh;
       width: 48.819vw;
     }
 
