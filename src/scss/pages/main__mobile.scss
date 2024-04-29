@@ -75,10 +75,10 @@
     height: 100vh;
     overflow: hidden;
 
-    grid-template-rows: 4.3vh 0.89fr 2fr;
+    grid-template-rows: 4.3vh auto 2fr;
 
     @media screen and (max-height: 700px) and (max-width: 500px) {
-      grid-template-rows: 4.3vh 1.15fr 2fr;
+      grid-template-rows: 4.3vh auto 2fr;
     }
   }
 

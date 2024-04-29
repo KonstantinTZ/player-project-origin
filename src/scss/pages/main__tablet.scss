@@ -457,7 +457,6 @@
     bottom: auto;
     top: 11.5vh;
     width: 52.205vw;
-    height: 81.455vh;
     height: auto;
     aspect-ratio: 1.4564;
     background: rgba(252, 254, 231, 0.75);
@@ -472,10 +471,9 @@
     &__dostup {
       display: block;
       align-self: center;
-      margin-top: 4.364vh;
-      margin-bottom: 8vh;
-      width: 22.756vw;
-      height: 4.182vh;
+      margin-top: 5%;
+      width: 41%;
+      height: 7%;
     }
 
     &__top {
@@ -491,34 +489,37 @@
     }
 
     &__checkbox {
-      padding-left: 12.222vw;
+      padding-left: 11.8vw;
       gap: 0.551vw;
 
       &:first-child {
-        margin-top: 2vh;
-        height: 3.364vh;
+        margin-top: 2.4%;
+        height: 4%;
       }
 
       &:nth-child(2) {
-        height: 3.364vh;
-        margin-top: 2vh;
+        height: 4%;
+        margin-top: 3%;
       }
 
       &:nth-child(6) {
-        margin-top: 2vh;
+        height: 4%;
+        margin-top: 4%;
       }
 
       &:nth-child(7) {
-        margin-top: 0vh;
+        height: 4%;
+        margin-top: 2%;
       }
 
       &:nth-child(8) {
-        margin-top: 0vh;
+        height: 4%;
+        margin-top: 2.5%;
       }
     }
 
     &__top {
-      height: 6.818vh;
+      height: 9%;
       padding-right: 0.512vw;
       align-items: center;
       padding-left: 1.496vw;
@@ -534,13 +535,18 @@
     }
 
     &__center {
-      margin-top: 2.273vh;
+      margin-top: 3%;
+      // height: 85.7% - иначе не задать высоту форму. 
+      height: 85.7% !important;
+      @media screen and (max-width: 700px) and (orientation: landscape) {
+      overflow-y: scroll;
+      }
 
       button {
         width: 8.071vw;
         height: 8.071vw;
-        right: 5.669vw;
-        bottom: 12.818vh;
+        right: 10%;
+        bottom: 16%;
 
         img {
           width: 100%;
@@ -550,7 +556,7 @@
 
       h5 {
         font-family: 'Arial';
-        font-size: 2.441vw;
+        font-size: 2.3vw;
         font-weight: 400;
         line-height: 1.89vw;
         color: #000000;
@@ -563,26 +569,26 @@
         }
 
         h5 {
-          margin-top: 2.045vh;
+          margin-top: 2%;
           line-height: 3.273vh;
         }
 
         .sep {
-          margin-top: 1.182vh;
+          margin-top: 1%;
           margin-bottom: 0;
           width: 37.165vw;
-          height: 0.455vh;
+          height: 1%;
           box-shadow: 0px 1px 1px 0px #676666;
         }
 
         .sub {
-          margin-top: 2.3vh;
-          font-size: 1.496vw;
+          margin-top: 3%;
+          font-size: 1.4vw;
           line-height: normal;
         }
 
         label {
-          font-size: 1.693vw;
+          font-size: 1.58vw;
           line-height: normal;
         }
 
