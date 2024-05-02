@@ -74,7 +74,6 @@
       align-items: center;
       white-space: nowrap;
       overflow: hidden;
-      text-overflow: ellipsis;
       padding-bottom: 0 !important;
       height: 7.636vh !important;
       min-height: 7.636vh !important;
@@ -95,7 +94,6 @@
 
         &:last-child {
           white-space: nowrap;
-          text-overflow: ellipsis;
           overflow: hidden;
           max-width: 10vw;
         }

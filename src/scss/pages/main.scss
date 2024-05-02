@@ -455,7 +455,8 @@
         
         &:last-child {
           white-space: nowrap;
-          text-overflow: ellipsis;
+          // по условиям правок
+          // text-overflow: ellipsis;
           overflow: hidden;
         }
       }
